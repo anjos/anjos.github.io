@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../../theme/stylesheet/style.min.css">
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+          media="(prefers-color-scheme: dark)"
+    href="../../theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: dark)"
+          href="../../theme/pygments/solarized-dark.min.css">
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+          href="../../theme/pygments/solarized-light.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="../../theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="../../theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="../../theme/font-awesome/css/solid.css">
+  <link rel="stylesheet" type="text/css" href="../../theme/academicons/css/academicons.min.css">
+
+    <link href="../../css/custom.css" rel="stylesheet">
+
+
+
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-22320747-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#333">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#333">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#333">
+
+<meta name="author" content="André Anjos" />
+<meta name="description" content="This course, divided in two trimesters (modules M06 and M08), presents fundamental tools used in machine learning ranging from the most basic to more advanced. It is given to master students at the Master in AI by the Idiap Research Institute, Switzerland." />
+<meta name="keywords" content="">
+
+
+<meta property="og:site_name" content="André Anjos"/>
+<meta property="og:title" content="Fundamentals of Machine Learning"/>
+<meta property="og:description" content="This course, divided in two trimesters (modules M06 and M08), presents fundamental tools used in machine learning ranging from the most basic to more advanced. It is given to master students at the Master in AI by the Idiap Research Institute, Switzerland."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="../../courses/fml/"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2021-04-13 21:30:00+02:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="../../author/andre-anjos.html">
+<meta property="article:section" content="courses"/>
+<meta property="og:image" content="../../images/covers/ai.png">
+
+  <title>André Anjos &ndash; Fundamentals of Machine Learning</title>
+
+</head>
+<body >
+  <aside>
+    <div>
+      <a href="../..">
+        <img src="/images/profile_128.png" alt="André Anjos" title="André Anjos">
+      </a>
+
+      <h1>
+        <a href="../..">André Anjos</a>
+      </h1>
+
+<p>Machine Learning, Computer Vision, Medical Imaging & Health Data Analysis, Reproducibility, Ph.D.</p>
+
+      <nav>
+        <ul class="list">
+
+
+
+            <li><a href="http://andreanjos.org/cv/cv.pdf">CV</a></li>
+            <li><a href="/research/">Research</a></li>
+            <li><a href="/publications/">Publications</a></li>
+            <li><a href="/courses/">Courses</a></li>
+            <li><a href="/software/">Software</a></li>
+            <li><a href="/media/">Talks & Media</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/short-bio/">Short Bio</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-orcid" href="https://orcid.org/0000-0001-7248-4014" target="_blank">
+                <i class="ai ai-orcid"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-google-scholar" href="https://scholar.google.ch/citations?user=pAfLhMoAAAAJ" target="_blank">
+                <i class="ai ai-google-scholar"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-linkedin" href="https://www.linkedin.com/in/andreranjos/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-stack-overflow" href="https://stackoverflow.com/users/712525/andré-anjos" target="_blank">
+              <i class="fab fa-stack-overflow"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-github" href="https://github.com/anjos" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a  class="sc-gitlab" href="https://gitlab.idiap.ch/bob" target="_blank">
+              <i class="fab fa-gitlab"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="fml">Fundamentals of Machine Learning</h1>
+    <p>
+      Posted on Tue 13 April 2021 in <a href="../../courses/">courses</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p class="figure center"><img alt="Idiap's logo" class="align-middle" src="../../images/logos/idiap.png" style="height: 100px;" /> <img alt="Unidistance's logo" class="align-middle" src="../../images/logos/unidistance.png" style="height: 100px;" /></p>
+<p>This course, divided in two trimesters (modules M06 and M08), present
+fundamental tools used in Machine Learning and Pattern Recognition ranging from
+the most basic to more advanced (e.g. Logistic Regression, Principal Component
+Analysis, Linear Discriminant Analysis, Multi-Layer Perceptrons, Gaussian
+Mixture Models, and Super Vector Machines). This course serves as a
+pre-requisite for Deep Learning and other master specialisations. It is given
+to master students at Idiap's <a class="reference external" href="https://master-ai.ch">Master in AI</a>.</p>
+<p><strong>Program</strong>:</p>
+<ul>
+<li><p class="first"><strong>Credits</strong>: 4 <a class="reference external" href="https://swisseducation.educa.ch/en/european-credit-transfer-and-accumulation-system-ects">ECTS</a> (equivalent to 100 to 120 working hours)</p>
+</li>
+<li><p class="first"><strong>Grading</strong>: Lab assignments (50%) and Final exam (50%)</p>
+</li>
+<li><p class="first"><strong>Days</strong>: Tuesdays, from 9:00 to 10:30</p>
+</li>
+<li><p class="first">Required prior knowledge: Linear algebra, Probabilities and Statistics,
+Python Programming</p>
+</li>
+<li><p class="first">Syllabus:</p>
+<ul class="simple">
+<li>Linear Regression (week 1 and 2)</li>
+<li>Logistic Regression (week 3 and 4)</li>
+<li>Decision Trees (week 5 and 6)</li>
+<li>Boosting (week 7 and 8)</li>
+<li>Multi-layer perceptron (week 9 and 10)</li>
+<li>Final Exam (week 11)</li>
+</ul>
+</li>
+<li><p class="first">Structure:</p>
+<p>Each topic is approached in two activities, where the first one covers
+theoretical content about one particular topic and the second one discusses
+practical aspects, as well as the assignments of the corresponding topic.</p>
+<p>Between each theoretical and practical activities a mandatory assignment is
+provided. Such assignment contains practical exercises (to be implemented in
+Python) about the corresponding theoretical class.  The student has five days
+in general to deliver such assignment but the specific deadlines are provided
+for each practical exercise hereafter.</p>
+</li>
+</ul>
+<p><strong>Resources</strong>:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://moodle.fernuni.ch/">Moodle page</a>: contains slides for all courses and lab assignments
+(N.B.: enrollement required)</li>
+<li><a class="reference external" href="https://lab.idiap.ch/devel/hub/jhub/">JupyterHub</a>: Course assignments are provided as <a class="reference external" href="https://jupyter.org">Jupyter Notebooks</a> through
+<a class="reference external" href="https://lab.idiap.ch/devel/hub/jhub/">JupyterHub</a> (no software installation required on student laptop)</li>
+</ul>
+<!-- Place your references here -->
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>
+  Switch to the <a href="javascript:void(0)" onclick="theme.switch(`dark`)">dark</a> | <a href="javascript:void(0)" onclick="theme.switch(`light`)">light</a> | <a href="javascript:void(0)" onclick="theme.switch(`browser`)">browser</a> theme
+  <script id="dark-theme-script"
+          src="../../theme/dark-theme/dark-theme.min.js"
+          data-enable-auto-detect-theme="True"
+          data-default-theme="light"
+          type="text/javascript">
+  </script>
+</p><p>&copy; André Anjos 2021</p>
+    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " André Anjos ",
+  "url" : "../..",
+  "image": "/images/profile_128.png",
+  "description": "Professional Website"
+}
+</script>
+
+</body>
+</html>
