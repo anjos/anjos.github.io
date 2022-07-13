@@ -24,10 +24,8 @@
           href="../theme/pygments/solarized-light.min.css">
 
 
-  <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/fontawesome.css">
-  <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/brands.css">
-  <link rel="stylesheet" type="text/css" href="../theme/font-awesome/css/solid.css">
-  <link rel="stylesheet" type="text/css" href="../theme/academicons/css/academicons.min.css">
+  <script src="https://kit.fontawesome.com/7ecc466543.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
     <link href="../css/custom.css" rel="stylesheet">
 
@@ -155,9 +153,24 @@
     </p>
       <h3 id="2022">2022</h3>
       <details>
+        <summary>Geoffrey Raposo, Anete Trajman, and Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos.
+Pulmonary tuberculosis screening from radiological signs on chest x-ray images using deep models.
+In <em>Union World Conference on Lung Health</em>. The Union, November 2022.</summary>
+        <br/><pre class="bibtex">@inproceedings{union-2022,
+    author = "Raposo, Geoffrey and Trajman, Anete and Anjos, Andr{\'{e}}",
+    month = "November",
+    title = "Pulmonary Tuberculosis Screening from Radiological Signs on Chest X-Ray Images Using Deep Models",
+    booktitle = "Union World Conference on Lung Health",
+    year = "2022",
+    organization = "The Union",
+    abstract = "Background: The World Health Organization has recently recommended the use of computer-aided detection (CAD) systems for screening pulmonary tuberculosis (PT) in Chest X-Ray images. Previous CAD models are based on direct image to probability detection techniques - and do not generalize well (from training to validation databases). We propose a method that overcomes these limitations by using radiological signs as intermediary proxies for PT detection. Design/Methods: We developed a multi-class deep learning model, mapping images to 14 radiological signs such as cavities, infiltration, nodules, and fibrosis, using the National Institute of Health (NIH) CXR14 dataset, which contains 112,120 images. Using three public PTB datasets (Montgomery County - MC, Shenzen - CH, and Indian - IN), summing up 955 images, we developed a second model mapping F probabilities to PTB diagnosis (binary labels). We evaluated this approach for its generalization capabilities against direct models, learnt directly from PTB training data or by transfer learning via cross-folding and cross-database experiments. The area under the specificity vs. sensitivity curve (AUC) considering all folds was used to summarize the performance of each approach. Results: The AUC for intra-dataset tests baseline direct detection deep models achieved 0.95 (MC), 0.95 (CH) and 0.91 (IN), with up to 35\\% performance drop on a cross-dataset evaluation scenario. Our proposed approach achieved AUC of 0.97 (MC), 0.90 (CH), and 0.93 (IN), with at most 11\\% performance drop on a cross-dataset evaluation (Table/figures). In most tests, the difference was less than 5\\%. Conclusions: A two-step CAD model based on radiological signs offers an adequate base for the development of PT screening systems and is more generalizable than a direct model. Unlike commercially available CADS, our model is completely reproducible and available open source at https://pypi.org/project/bob.med.tb/."
+}
+</pre>
+      </details>
+      <details>
         <summary>Adrian Galdran, André Anjos, José Dolz, Hadi Chakor, Hervé Lombaert, and Ismail&nbsp;Ben Ayed.
 State-of-the-art retinal vessel segmentation with minimalistic models.
-<em>Nature Scientific Reports</em>, 12(1):6174, 4 2022.
+<em>Nature Scientific Reports</em>, 12(1):6174, April 2022.
 Number: 1 Publisher: Nature Publishing Group.
 URL: <a href="https://www.nature.com/articles/s41598-022-09675-y">https://www.nature.com/articles/s41598-022-09675-y</a>, <a href="https://doi.org/10.1038/s41598-022-09675-y">doi:10.1038/s41598-022-09675-y</a>.</summary>
 <br/><a href="https://www.nature.com/articles/s41598-022-09675-y.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{nsr-2022,
@@ -176,7 +189,7 @@ URL: <a href="https://www.nature.com/articles/s41598-022-09675-y">https://www.na
     journaltitle = "Scientific Reports",
     shortjournal = "Sci Rep",
     year = "2022",
-    month = "4",
+    month = "April",
     date = "2022-04-13",
     langid = "english",
     note = "Number: 1 Publisher: Nature Publishing Group",
@@ -188,7 +201,7 @@ URL: <a href="https://www.nature.com/articles/s41598-022-09675-y">https://www.na
       <details>
         <summary>Matheus&nbsp;A. Renzo, Natália Fernandez, André&nbsp;A. Baceti, Natanael&nbsp;Nunes Moura&nbsp;Junior, and André Anjos.
 Development of a lung segmentation algorithm for analog imaged chest x-ray: preliminary results.
-In <em>Anais do 15. Congresso Brasileiro de Inteligência Computacional</em>, 1–8. <span class="bibtex-protected">SBIC</span>, 10 2021.
+In <em>Anais do 15. Congresso Brasileiro de Inteligência Computacional</em>, 1–8. <span class="bibtex-protected">SBIC</span>, October 2021.
 URL: <a href="https://sbic.org.br/eventos/cbic_2021/cbic2021-123/">https://sbic.org.br/eventos/cbic_2021/cbic2021-123/</a>, <a href="https://doi.org/10.21528/CBIC2021-123">doi:10.21528/CBIC2021-123</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/cbic-2021.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@inproceedings{cbic-2021,
     author = "Renzo, Matheus A. and Fernandez, Natália and Baceti, André A. and Moura Junior, Natanael Nunes and Anjos, André",
@@ -202,7 +215,7 @@ URL: <a href="https://sbic.org.br/eventos/cbic_2021/cbic2021-123/">https://sbic.
     pages = "1--8",
     booktitle = "Anais do 15. Congresso Brasileiro de Inteligência Computacional",
     year = "2021",
-    month = "10",
+    month = "October",
     publisher = "{SBIC}"
 }
 </pre>
@@ -211,7 +224,7 @@ URL: <a href="https://sbic.org.br/eventos/cbic_2021/cbic2021-123/">https://sbic.
       <details>
         <summary>Ana Cláudia Barbosa&nbsp;Honório Ferreira, Danton&nbsp;Diego Ferreira, Henrique&nbsp;Ceretta Oliveira, Igor Carvalho&nbsp;de Resende, André Anjos, and Maria Helena Baena de&nbsp;Moraes Lopes.
 Competitive neural layer-based method to identify people with high risk for diabetic foot.
-<em>Computers in Biology and Medicine</em>, 5 2020.
+<em>Computers in Biology and Medicine</em>, May 2020.
 URL: <a href="https://www.sciencedirect.com/science/article/pii/S0010482520301244">https://www.sciencedirect.com/science/article/pii/S0010482520301244</a>, <a href="https://doi.org/10.1016/j.compbiomed.2020.103744">doi:10.1016/j.compbiomed.2020.103744</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/compbiomed-2020.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{compbiomed-2020,
     author = "Ferreira, Ana Cl\'audia Barbosa Hon\'orio and Ferreira, Danton Diego and Oliveira, Henrique Ceretta and Resende, Igor Carvalho de and Anjos, Andr\'e and Lopes, Maria Helena Baena de Moraes",
@@ -222,7 +235,7 @@ URL: <a href="https://www.sciencedirect.com/science/article/pii/S001048252030124
     doi = "10.1016/j.compbiomed.2020.103744",
     abstract = "Background and objective: To automatically identify patients with diabetes mellitus (DM) who have high risk of developing diabetic foot, via an unsupervised machine learning technique. Methods: We collected a new database containing 54 known risk factors from 250 patients diagnosed with diabetes mellitus. The database also contained a separate validation cohort composed of 73 subjects, where the perceived risk was annotated by expert nurses. A competitive neuron layer-based method was used to automatically split training data into two risk groups. Results: We found that one of the groups was composed of patients with higher risk of developing diabetic foot. The dominant variables that described group membership via our method agreed with the findings from other studies, and indicated a greater risk for developing such a condition. Our method was validated on the available test data, reaching 71\\% sensitivity, 100\\% specificity, and 90\\% accuracy. Conclusions Unsupervised learning may be deployed to screen patients with diabetes mellitus, pointing out high-risk individuals who require priority follow-up in the prevention of diabetic foot with very high accuracy. The proposed method is automatic and does not require clinical examinations to perform risk assessment, being solely based on the information of a questionnaire answered by patients. Our study found that discriminant variables for predicting risk group membership are highly correlated with expert opinion.",
     journal = "Computers in Biology and Medicine",
-    month = "5",
+    month = "May",
     year = "2020",
     keywords = "Artificial neural network, Diabetes mellitus, Diabetic foot"
 }
@@ -231,13 +244,13 @@ URL: <a href="https://www.sciencedirect.com/science/article/pii/S001048252030124
       <details>
         <summary>Adrian Galdran, André Anjos, José Dolz, Hadi Chakor, Hervé Lombaert, and Ismail&nbsp;Ben Ayed.
 The little w-net that could: state-of-the-art retinal vessel segmentation with minimalistic models.
-9 2020.
+September 2020.
 URL: <a href="https://arxiv.org/abs/2009.01907">https://arxiv.org/abs/2009.01907</a>, <a href="https://arxiv.org/abs/2009.01907">arXiv:2009.01907</a>.</summary>
 <br/><a href="https://arxiv.org/pdf/2009.01907" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@misc{arxiv-2020,
     author = "Galdran, Adrian and Anjos, André and Dolz, José and Chakor, Hadi and Lombaert, Hervé and Ayed, Ismail Ben",
     title = "The Little W-Net That Could: State-of-the-Art Retinal Vessel Segmentation with Minimalistic Models",
     year = "2020",
-    month = "9",
+    month = "September",
     eprinttype = "arxiv",
     eprint = "2009.01907",
     archivePrefix = "arXiv",
@@ -253,13 +266,13 @@ URL: <a href="https://arxiv.org/abs/2009.01907">https://arxiv.org/abs/2009.01907
       <details>
         <summary>Anjith George, Zohreh Mostaani, David Geissenbuhler, Olegs Nikisins, Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos, and S<span class="bibtex-protected"><span class="bibtex-protected">é</span></span>bastien Marcel.
 Biometric face presentation attack detection with multi-channel convolutional neural network.
-<em>IEEE Transactions on Information Forensics and Security</em>, 5 2019.
+<em>IEEE Transactions on Information Forensics and Security</em>, May 2019.
 <a href="https://doi.org/10.1109/TIFS.2019.2916652">doi:10.1109/TIFS.2019.2916652</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/tifs-2019-2.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{tifs-2019-2,
     author = "George, Anjith and Mostaani, Zohreh and Geissenbuhler, David and Nikisins, Olegs and Anjos, Andr{\'{e}} and Marcel, S{\'{e}}bastien",
     title = "Biometric Face Presentation Attack Detection with Multi-Channel Convolutional Neural Network",
     journal = "IEEE Transactions on Information Forensics and Security",
-    month = "5",
+    month = "May",
     year = "2019",
     doi = "10.1109/TIFS.2019.2916652",
     pdf = "https://www.idiap.ch/~aanjos/papers/tifs-2019-2.pdf",
@@ -270,11 +283,11 @@ Biometric face presentation attack detection with multi-channel convolutional ne
       <details>
         <summary>Tiago de&nbsp;Freitas&nbsp;Pereira, André Anjos, and Sébastien Marcel.
 Heterogeneous face recognition using domain specific units.
-<em>IEEE Transactions on Information Forensics and Security</em>, 12 2019.
+<em>IEEE Transactions on Information Forensics and Security</em>, December 2019.
 URL: <a href="https://publications.idiap.ch/index.php/publications/show/3963">https://publications.idiap.ch/index.php/publications/show/3963</a>, <a href="https://doi.org/10.1109/TIFS.2018.2885284">doi:10.1109/TIFS.2018.2885284</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/ieee-tifs-2018.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{tifs-2019,
     author = "de Freitas Pereira, Tiago and Anjos, André and Marcel, Sébastien",
-    month = "12",
+    month = "December",
     title = "Heterogeneous Face Recognition Using Domain Specific Units",
     journal = "IEEE Transactions on Information Forensics and Security",
     year = "2019",
@@ -289,7 +302,7 @@ URL: <a href="https://publications.idiap.ch/index.php/publications/show/3963">ht
         <summary>Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos, Pedro Tome, and S<span class="bibtex-protected"><span class="bibtex-protected">é</span></span>bastien Marcel.
 An introduction to vein presentation attacks and detection.
 In S<span class="bibtex-protected"><span class="bibtex-protected">é</span></span>bastien Marcel, Mark Nixon, Julian Fierrez, and Nicholas Evans, editors, <em>Handbook of Biometric Anti-Spoofing</em>, pages 419–438.
-Springer-Verlag, 2nd edition (in press) edition, 1 2019.
+Springer-Verlag, 2nd edition (in press) edition, January 2019.
 <a href="https://doi.org/10.1007/978-3-319-92627-8_18">doi:10.1007/978-3-319-92627-8_18</a>.</summary>
         <br/><pre class="bibtex">@incollection{hopad-2019-3,
     author = "Anjos, Andr{\'{e}} and Tome, Pedro and Marcel, S{\'{e}}bastien",
@@ -299,7 +312,7 @@ Springer-Verlag, 2nd edition (in press) edition, 1 2019.
     booktitle = "Handbook of Biometric Anti-Spoofing",
     publisher = "Springer-Verlag",
     year = "2019",
-    month = "1",
+    month = "January",
     pages = "419--438",
     isbn = "ISBN 978-3-319-92627-8",
     doi = "10.1007/978-3-319-92627-8\_18",
@@ -311,7 +324,7 @@ Springer-Verlag, 2nd edition (in press) edition, 1 2019.
         <summary>Ivana Chingovska, Amir Mohammadi, Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos, and S<span class="bibtex-protected"><span class="bibtex-protected">é</span></span>bastien Marcel.
 Evaluation methodologies for biometric presentation attack detection.
 In S<span class="bibtex-protected"><span class="bibtex-protected">é</span></span>bastien Marcel, Mark Nixon, Julian Fierrez, and Nicholas Evans, editors, <em>Handbook of Biometric Anti-Spoofing</em>, pages 457–480.
-Springer-Verlag, 2nd edition (in press) edition, 1 2019.
+Springer-Verlag, 2nd edition (in press) edition, January 2019.
 <a href="https://doi.org/10.1007/978-3-319-92627-8_20">doi:10.1007/978-3-319-92627-8_20</a>.</summary>
         <br/><pre class="bibtex">@incollection{hopad-2019-2,
     author = "Chingovska, Ivana and Mohammadi, Amir and Anjos, Andr{\'{e}} and Marcel, S{\'{e}}bastien",
@@ -321,7 +334,7 @@ Springer-Verlag, 2nd edition (in press) edition, 1 2019.
     booktitle = "Handbook of Biometric Anti-Spoofing",
     publisher = "Springer-Verlag",
     year = "2019",
-    month = "1",
+    month = "January",
     pages = "457--480",
     isbn = "ISBN 978-3-319-92627-8",
     doi = "10.1007/978-3-319-92627-8\_20",
@@ -333,7 +346,7 @@ Springer-Verlag, 2nd edition (in press) edition, 1 2019.
         <summary>Sushil Bhattacharjee, Amir Mohammadi, Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos, and S<span class="bibtex-protected"><span class="bibtex-protected">é</span></span>bastien Marcel.
 Recent advances in face presentation attack detection.
 In S<span class="bibtex-protected"><span class="bibtex-protected">é</span></span>bastien Marcel, Mark Nixon, Julian Fierrez, and Nicholas Evans, editors, <em>Handbook of Biometric Anti-Spoofing</em>, pages 207–228.
-Springer-Verlag, 2nd edition (in press) edition, 1 2019.
+Springer-Verlag, 2nd edition (in press) edition, January 2019.
 <a href="https://doi.org/10.1007/978-3-319-92627-8_10">doi:10.1007/978-3-319-92627-8_10</a>.</summary>
         <br/><pre class="bibtex">@incollection{hopad-2019,
     author = "Bhattacharjee, Sushil and Mohammadi, Amir and Anjos, Andr{\'{e}} and Marcel, S{\'{e}}bastien",
@@ -343,7 +356,7 @@ Springer-Verlag, 2nd edition (in press) edition, 1 2019.
     booktitle = "Handbook of Biometric Anti-Spoofing",
     publisher = "Springer-Verlag",
     year = "2019",
-    month = "1",
+    month = "January",
     pages = "207--228",
     isbn = "ISBN 978-3-319-92627-8",
     doi = "10.1007/978-3-319-92627-8\_10",
@@ -354,13 +367,13 @@ Springer-Verlag, 2nd edition (in press) edition, 1 2019.
       <details>
         <summary>Tim Laibacher and André Anjos.
 On the evaluation and real-world usage scenarios of deep vessel segmentation for retinography.
-9 2019.
+September 2019.
 URL: <a href="https://arxiv.org/abs/1909.03856">https://arxiv.org/abs/1909.03856</a>, <a href="https://arxiv.org/abs/1909.03856">arXiv:1909.03856</a>.</summary>
 <br/><a href="https://arxiv.org/pdf/1909.03856" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@misc{arxiv-2019,
     author = "Laibacher, Tim and Anjos, Andr\'e",
     title = "On the Evaluation and Real-World Usage Scenarios of Deep Vessel Segmentation for Retinography",
     year = "2019",
-    month = "9",
+    month = "September",
     eprint = "1909.03856",
     archivePrefix = "arXiv",
     primaryClass = "cs.CV",
@@ -374,12 +387,12 @@ URL: <a href="https://arxiv.org/abs/1909.03856">https://arxiv.org/abs/1909.03856
       <details>
         <summary>Lambert Sonna&nbsp;Momo, Luciano Cerqueira&nbsp;Torres, Sébastien Marcel, André Anjos, Michael Liebling, Adrian Shajkofci, Serge Amoos, Alain Woeffray, Alexandre Sierro, Pierre Roduit, Pierre Ferrez, and Lucas Bonvin.
 Method and device for biometric vascular recognition and/or identification.
-<em>WO/2019/150254</em>, 8 2019.</summary>
+<em>WO/2019/150254</em>, August 2019.</summary>
         <br/><pre class="bibtex">@patent{3dfv-patent-2019,
     author = "Sonna Momo, Lambert and Cerqueira Torres, Luciano and Marcel, S\'ebastien and Anjos, Andr\'e and Liebling, Michael and Shajkofci, Adrian and Amoos, Serge and Woeffray, Alain and Sierro, Alexandre and Roduit, Pierre and Ferrez, Pierre and Bonvin, Lucas",
     title = "Method and Device for Biometric Vascular Recognition and/or Identification",
     year = "2019",
-    month = "8",
+    month = "August",
     day = "8",
     number = "WO/2019/150254",
     type = "Patent",
@@ -397,11 +410,11 @@ Method and device for biometric vascular recognition and/or identification.
       <details>
         <summary>Olegs Nikisins, Teodors Eglitis, André Anjos, and Sébastien Marcel.
 Fast cross-correlation based wrist vein recognition algorithm with rotation and translation compensation.
-In <em>Sixth International Workshop on Biometrics and Forensics</em>. 6 2018.
+In <em>Sixth International Workshop on Biometrics and Forensics</em>. June 2018.
 URL: <a href="https://publications.idiap.ch/index.php/publications/show/3835">https://publications.idiap.ch/index.php/publications/show/3835</a>, <a href="https://doi.org/10.1109/IWBF.2018.8401550">doi:10.1109/IWBF.2018.8401550</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/iwbf-2018.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@inproceedings{iwbf-2018,
     author = "Nikisins, Olegs and Eglitis, Teodors and Anjos, André and Marcel, Sébastien",
-    month = "6",
+    month = "June",
     title = "Fast cross-correlation based wrist vein recognition algorithm with rotation and translation compensation",
     booktitle = "Sixth International Workshop on Biometrics and Forensics",
     year = "2018",
@@ -415,11 +428,11 @@ URL: <a href="https://publications.idiap.ch/index.php/publications/show/3835">ht
       <details>
         <summary>Olegs Nikisins, Amir Mohammadi, André Anjos, and Sébastien Marcel.
 On effectiveness of anomaly detection approaches against unseen presentation attacks in face anti-spoofing.
-In <em>The 11th IAPR International Conference on Biometrics (ICB 2018)</em>. 2 2018.
+In <em>The 11th IAPR International Conference on Biometrics (ICB 2018)</em>. February 2018.
 URL: <a href="https://publications.idiap.ch/index.php/publications/show/3793">https://publications.idiap.ch/index.php/publications/show/3793</a>, <a href="https://doi.org/10.1109/ICB2018.2018.00022">doi:10.1109/ICB2018.2018.00022</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/icb-2018.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@inproceedings{icb-2018,
     author = "Nikisins, Olegs and Mohammadi, Amir and Anjos, André and Marcel, Sébastien",
-    month = "2",
+    month = "February",
     title = "On Effectiveness of Anomaly Detection Approaches against Unseen Presentation Attacks in Face Anti-Spoofing",
     booktitle = "The 11th IAPR International Conference on Biometrics (ICB 2018)",
     year = "2018",
@@ -433,12 +446,12 @@ URL: <a href="https://publications.idiap.ch/index.php/publications/show/3793">ht
       <details>
         <summary>Marcel Sébastien, André Anjos, and Philip Abbet.
 Method and internet-connected server for reviewing a computer-executable experiment.
-<em>US9973503B2</em>, 5 2018.</summary>
+<em>US9973503B2</em>, May 2018.</summary>
         <br/><pre class="bibtex">@patent{beat-patent-2018,
     author = "Sébastien, Marcel and Anjos, André and Abbet, Philip",
     title = "Method and internet-connected server for reviewing a computer-executable experiment",
     year = "2018",
-    month = "5",
+    month = "May",
     day = "15",
     number = "US9973503B2",
     type = "Patent",
@@ -457,11 +470,11 @@ Method and internet-connected server for reviewing a computer-executable experim
       <details>
         <summary>Milos Cernak, Alain Komaty, Amir Mohammadi, André Anjos, and Sébastien Marcel.
 Bob speaks kaldi.
-In <em>Proceedings of Interspeech</em>. 8 2017.
+In <em>Proceedings of Interspeech</em>. August 2017.
 URL: <a href="https://publications.idiap.ch/index.php/publications/show/3623">https://publications.idiap.ch/index.php/publications/show/3623</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/interspeech-2017.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@inproceedings{interspeech-2017,
     author = "Cernak, Milos and Komaty, Alain and Mohammadi, Amir and Anjos, André and Marcel, Sébastien",
-    month = "8",
+    month = "August",
     title = "Bob Speaks Kaldi",
     booktitle = "Proceedings of Interspeech",
     year = "2017",
@@ -474,11 +487,11 @@ URL: <a href="https://publications.idiap.ch/index.php/publications/show/3623">ht
       <details>
         <summary>André Anjos, Manuel Günther, Tiago de&nbsp;Freitas&nbsp;Pereira, Pavel Korshunov, Amir Mohammadi, and Sébastien Marcel.
 Continuously reproducing toolchains in pattern recognition and machine learning experiments.
-In <em>Thirty-fourth International Conference on Machine Learning</em>. 8 2017.
+In <em>Thirty-fourth International Conference on Machine Learning</em>. August 2017.
 URL: <a href="https://publications.idiap.ch/index.php/publications/show/3666">https://publications.idiap.ch/index.php/publications/show/3666</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/icml-2017-2.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>&nbsp;|&nbsp;<a href="https://www.idiap.ch/~aanjos/posters/icml-2017-2.pdf" target="_blank"><b>Poster:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@inproceedings{icml-2017-2,
     author = "Anjos, André and Günther, Manuel and de Freitas Pereira, Tiago and Korshunov, Pavel and Mohammadi, Amir and Marcel, Sébastien",
-    month = "8",
+    month = "August",
     title = "Continuously Reproducing Toolchains in Pattern Recognition and Machine Learning Experiments",
     booktitle = "Thirty-fourth International Conference on Machine Learning",
     year = "2017",
@@ -493,11 +506,11 @@ URL: <a href="https://publications.idiap.ch/index.php/publications/show/3666">ht
       <details>
         <summary>André Anjos, Laurent El&nbsp;Shafey, and Sébastien Marcel.
 Beat: an open-science web platform.
-In <em>Thirty-fourth International Conference on Machine Learning</em>. 8 2017.
+In <em>Thirty-fourth International Conference on Machine Learning</em>. August 2017.
 URL: <a href="https://publications.idiap.ch/index.php/publications/show/3665">https://publications.idiap.ch/index.php/publications/show/3665</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/icml-2017-1.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>&nbsp;|&nbsp;<a href="https://www.idiap.ch/~aanjos/posters/icml-2017-1.pdf" target="_blank"><b>Poster:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@inproceedings{icml-2017-1,
     author = "Anjos, André and El Shafey, Laurent and Marcel, Sébastien",
-    month = "8",
+    month = "August",
     title = "BEAT: An Open-Science Web Platform",
     booktitle = "Thirty-fourth International Conference on Machine Learning",
     year = "2017",
@@ -512,12 +525,12 @@ URL: <a href="https://publications.idiap.ch/index.php/publications/show/3665">ht
       <details>
         <summary>André Anjos and Sébastien Marcel.
 A data-network connected server, a device, a platform and a method for conducting computer-executable experiments.
-<em>WO/2017/221049</em>, 12 2017.</summary>
+<em>WO/2017/221049</em>, December 2017.</summary>
         <br/><pre class="bibtex">@patent{beat-patent-2017,
     author = "Anjos, André and Marcel, Sébastien",
     title = "A data-network connected server, a device, a platform and a method for conducting computer-executable experiments",
     year = "2017",
-    month = "12",
+    month = "December",
     day = "28",
     number = "WO/2017/221049",
     type = "Patent",
@@ -535,14 +548,14 @@ A data-network connected server, a device, a platform and a method for conductin
       <details>
         <summary>Guillaume Heusch, Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos, and S<span class="bibtex-protected"><span class="bibtex-protected">é</span></span>bastien Marcel.
 A reproducible study on remote heart rate measurement.
-9 2017.
+September 2017.
 URL: <a href="https://arxiv.org/abs/1709.00962">https://arxiv.org/abs/1709.00962</a>, <a href="https://arxiv.org/abs/1709.00962">arXiv:1709.00962</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/arxiv-2017-2.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@misc{arxiv-2017-2,
     author = "Heusch, Guillaume and Anjos, Andr{\'{e}} and Marcel, S{\'{e}}bastien",
     title = "A reproducible study on remote heart rate measurement",
     journal = "arXiv",
     year = "2017",
-    month = "9",
+    month = "September",
     archivePrefix = "arXiv",
     eprint = "1709.00962",
     primaryClass = "cs-se",
@@ -555,13 +568,13 @@ URL: <a href="https://arxiv.org/abs/1709.00962">https://arxiv.org/abs/1709.00962
       <details>
         <summary>André Anjos, Laurent El-Shafey, and Sébastien Marcel.
 Beat: an open-source web-based open-science platform.
-4 2017.
+April 2017.
 URL: <a href="https://arxiv.org/abs/1704.02319">https://arxiv.org/abs/1704.02319</a>, <a href="https://arxiv.org/abs/1704.02319">arXiv:1704.02319</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/arxiv-2017.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@misc{arxiv-2017,
     author = "Anjos, André and El-Shafey, Laurent and Marcel, Sébastien",
     title = "BEAT: An Open-Source Web-Based Open-Science Platform",
     year = "2017",
-    month = "4",
+    month = "April",
     archivePrefix = "arXiv",
     eprint = "1704.02319",
     primaryClass = "cs-se",
@@ -575,11 +588,11 @@ URL: <a href="https://arxiv.org/abs/1704.02319">https://arxiv.org/abs/1704.02319
       <details>
         <summary>Aythami Morales, Julian Fierrez, Ruben Tolosana, Javier Ortega-Garcia, Javier Galbally, Marta Gomez-Barrero, Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos, and S<span class="bibtex-protected"><span class="bibtex-protected">é</span></span>bastien Marcel.
 Keystroke biometrics ongoing competition.
-<em>IEEE Access</em>, 4:7736–7746, 11 2016.
+<em>IEEE Access</em>, 4:7736–7746, November 2016.
 <a href="https://doi.org/10.1109/ACCESS.2016.2626718">doi:10.1109/ACCESS.2016.2626718</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/ieee-access-2016.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{ieee-access-2016,
     author = "Morales, Aythami and Fierrez, Julian and Tolosana, Ruben and Ortega-Garcia, Javier and Galbally, Javier and Gomez-Barrero, Marta and Anjos, Andr{\'{e}} and Marcel, S{\'{e}}bastien",
-    month = "11",
+    month = "November",
     title = "Keystroke Biometrics Ongoing Competition",
     journal = "IEEE Access",
     volume = "4",
@@ -596,11 +609,11 @@ Keystroke biometrics ongoing competition.
         <summary>Ivana Chingovska, Nesli Erdogmus, Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos, and S<span class="bibtex-protected"><span class="bibtex-protected">é</span></span>bastien Marcel.
 Face recognition systems under spoofing attacks.
 In <em>Face Recognition Systems Under Spoofing Attacks</em>, chapter&nbsp;8, pages 165–194.
-Springer International Publishing, 1st edition edition, 2 2016.
+Springer International Publishing, 1st edition edition, February 2016.
 <a href="https://doi.org/10.1007/978-3-319-28501-6_8">doi:10.1007/978-3-319-28501-6_8</a>.</summary>
         <br/><pre class="bibtex">@incollection{face-spoof-2016,
     author = "Chingovska, Ivana and Erdogmus, Nesli and Anjos, Andr{\'{e}} and Marcel, S{\'{e}}bastien",
-    month = "2",
+    month = "February",
     title = "Face Recognition Systems Under Spoofing Attacks",
     booktitle = "Face Recognition Systems Under Spoofing Attacks",
     edition = "1st edition",
@@ -617,7 +630,7 @@ Springer International Publishing, 1st edition edition, 2 2016.
       <details>
         <summary>Ivana Chingovska and Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos.
 On the use of client identity information for face anti-spoofing.
-<em>IEEE Transactions on Information Forensics and Security, Special Issue on Biometric Anti-spoofing</em>, 10(4):787–796, 2 2015.
+<em>IEEE Transactions on Information Forensics and Security, Special Issue on Biometric Anti-spoofing</em>, 10(4):787–796, February 2015.
 <a href="https://doi.org/10.1109/TIFS.2015.2400392">doi:10.1109/TIFS.2015.2400392</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/tifs-2015.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{tifs-2015,
     author = "Chingovska, Ivana and Anjos, Andr{\'{e}}",
@@ -626,7 +639,7 @@ On the use of client identity information for face anti-spoofing.
     journal = "IEEE Transactions on Information Forensics and Security, Special Issue on Biometric Anti-spoofing",
     volume = "10",
     number = "4",
-    month = "2",
+    month = "February",
     year = "2015",
     pages = "787--796",
     doi = "10.1109/TIFS.2015.2400392",
@@ -639,14 +652,14 @@ On the use of client identity information for face anti-spoofing.
       <details>
         <summary>Ivana Chingovska, André Anjos, and Sébastien Marcel.
 Biometrics evaluation under spoofing attacks.
-<em>IEEE Transactions on Information, Forensics and Security</em>, 8 2014.
+<em>IEEE Transactions on Information, Forensics and Security</em>, August 2014.
 <a href="https://doi.org/10.1109/TIFS.2014.2349158">doi:10.1109/TIFS.2014.2349158</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/tifs-2014.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{tifs-2014,
     author = "Chingovska, Ivana and Anjos, André and Marcel, Sébastien",
     title = "Biometrics Evaluation Under Spoofing Attacks",
     journal = "IEEE Transactions on Information, Forensics and Security",
     year = "2014",
-    month = "8",
+    month = "August",
     volume = "9",
     number = "12",
     doi = "10.1109/TIFS.2014.2349158",
@@ -718,14 +731,14 @@ Springer-Verlag, 2014.
       <details>
         <summary>Tiago de&nbsp;Freitas&nbsp;Pereira, Jukka Komulainen, André Anjos, José&nbsp;Mario De&nbsp;Martino, Abdenour Hadid, Matti Pietikainen, and Sébastien Marcel.
 Face liveness detection using dynamic texture.
-<em>EURASIP Journal on Image and Video Processing</em>, 1 2014.
+<em>EURASIP Journal on Image and Video Processing</em>, January 2014.
 <a href="https://doi.org/10.1186/1687-5281-2014-2">doi:10.1186/1687-5281-2014-2</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/eurasip-2014.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{eurasip-2014,
     author = "de Freitas Pereira, Tiago and Komulainen, Jukka and Anjos, André and De Martino, José Mario and Hadid, Abdenour and Pietikainen, Matti and Marcel, Sébastien",
     title = "Face liveness detection using dynamic texture",
     journal = "EURASIP Journal on Image and Video Processing",
     year = "2014",
-    month = "1",
+    month = "January",
     doi = "10.1186/1687-5281-2014-2",
     volume = "2014:2",
     pdf = "https://www.idiap.ch/~aanjos/papers/eurasip-2014.pdf",
@@ -777,14 +790,14 @@ Springer US, 2nd edition edition, 2014.
       <details>
         <summary>André Anjos, Murali&nbsp;Mohan Chakka, and Sébastien Marcel.
 Motion-based counter-measures to photo attacks in face recognition.
-<em>IET Biometrics</em>, 7 2013.
+<em>IET Biometrics</em>, July 2013.
 <a href="https://doi.org/10.1049/iet-bmt.2012.0071">doi:10.1049/iet-bmt.2012.0071</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/iet-biometrics-2013.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{iet-biometrics-2013,
     author = "Anjos, André and Chakka, Murali Mohan and Marcel, Sébastien",
     title = "Motion-Based Counter-Measures to Photo Attacks in Face Recognition",
     journal = "IET Biometrics",
     year = "2013",
-    month = "7",
+    month = "July",
     pdf = "https://www.idiap.ch/~aanjos/papers/iet-biometrics-2013.pdf",
     doi = "10.1049/iet-bmt.2012.0071",
     abstract = "Identity spoofing is a contender for high-security face recognition applications. With the advent of social media and globalized search, our face images and videos are wide-spread on the internet and can be potentially used to attack biometric systems without previous user consent. Yet, research to counter these threats is just on its infancy - we lack public standard databases, protocols to measure spoofing vulnerability and baseline methods to detect these attacks. The contributions of this work to the area are three-fold: firstly we introduce a publicly available PHOTO-ATTACK database with associated protocols to measure the effectiveness of counter-measures. Based on the data available, we conduct a study on current state-of-the-art spoofing detection algorithms based on motion analysis, showing they fail under the light of these new dataset. By last, we propose a new technique of counter-measure solely based on foreground/background motion correlation using Optical Flow that outperforms all other algorithms achieving nearly perfect scoring with an equal-error rate of 1.52\\% on the available test data. The source code leading to the reported results is made available for the replicability of findings in this article."
@@ -794,13 +807,13 @@ Motion-based counter-measures to photo attacks in face recognition.
       <details>
         <summary>I.&nbsp;Chingovska, J.&nbsp;Yang, Z.&nbsp;Lei, D.&nbsp;Yi, S.&nbsp;Z. Li, O.&nbsp;Kähm, C.&nbsp;Glaser, N.&nbsp;Damer, A.&nbsp;Kuijper, A.&nbsp;Nouak, J.&nbsp;Komulainen, T.&nbsp;Pereira, S.&nbsp;Gupta, S.&nbsp;Khandelwal, S.&nbsp;Bansal, A.&nbsp;Rai, T.&nbsp;Krishna, D.&nbsp;Goyal, M.-A. Waris, H.&nbsp;Zhang, I.&nbsp;Ahmad, S.&nbsp;Kiranyaz, M.&nbsp;Gabbouj, R.&nbsp;Tronci, M.&nbsp;Pili, N.&nbsp;Sirena, F.&nbsp;Roli, J.&nbsp;Galbally, J.&nbsp;Fierrez, A.&nbsp;Pinto, H.&nbsp;Pedrini, W.&nbsp;S. Schwartz, A.&nbsp;Rocha, A.&nbsp;Anjos, and S.&nbsp;Marcel.
 The 2nd competition on counter measures to 2d face spoofing attacks.
-In <em>International Conference on Biometrics 2013</em>. 6 2013.
+In <em>International Conference on Biometrics 2013</em>. June 2013.
 <a href="https://doi.org/10.1109/ICB.2013.6613026">doi:10.1109/ICB.2013.6613026</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/icb-2013-3.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@inproceedings{icb-2013-3,
     author = "Chingovska, I. and Yang, J. and Lei, Z. and Yi, D. and Li, S. Z. and Kähm, O. and Glaser, C. and Damer, N. and Kuijper, A. and Nouak, A. and Komulainen, J. and Pereira, T. and Gupta, S. and Khandelwal, S. and Bansal, S. and Rai, A. and Krishna, T. and Goyal, D. and Waris, M.-A. and Zhang, H. and Ahmad, I. and Kiranyaz, S. and Gabbouj, M. and Tronci, R. and Pili, M. and Sirena, N. and Roli, F. and Galbally, J. and Fierrez, J. and Pinto, A. and Pedrini, H. and Schwartz, W. S. and Rocha, A. and Anjos, A. and Marcel, S.",
     title = "The 2nd Competition on Counter Measures to 2D Face Spoofing Attacks",
     booktitle = "International Conference on Biometrics 2013",
-    month = "6",
+    month = "June",
     year = "2013",
     pdf = "https://www.idiap.ch/~aanjos/papers/icb-2013-3.pdf",
     doi = "10.1109/ICB.2013.6613026",
@@ -811,13 +824,13 @@ In <em>International Conference on Biometrics 2013</em>. 6 2013.
       <details>
         <summary>Jukka Komulainen, Abdenour Hadid, Matti Pietikäinen, André Anjos, and Sébastien Marcel.
 Complementary countermeasures for detecting scenic face spoofing attacks.
-In <em>International Conference on Biometrics 2013</em>. 6 2013.
+In <em>International Conference on Biometrics 2013</em>. June 2013.
 <a href="https://doi.org/10.1109/ICB.2013.6612968">doi:10.1109/ICB.2013.6612968</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/icb-2013-2.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@inproceedings{icb-2013-2,
     author = "Komulainen, Jukka and Hadid, Abdenour and Pietikäinen, Matti and Anjos, André and Marcel, Sébastien",
     title = "Complementary Countermeasures for Detecting Scenic Face Spoofing Attacks",
     booktitle = "International Conference on Biometrics 2013",
-    month = "6",
+    month = "June",
     year = "2013",
     pdf = "https://www.idiap.ch/~aanjos/papers/icb-2013-2.pdf",
     doi = "10.1109/ICB.2013.6612968",
@@ -828,13 +841,13 @@ In <em>International Conference on Biometrics 2013</em>. 6 2013.
       <details>
         <summary>Tiago de&nbsp;Freitas&nbsp;Pereira, André Anjos, José Mario&nbsp;De Martino, and Sébastien Marcel.
 Can face anti-spoofing countermeasures work in a real world scenario?
-In <em>International Conference on Biometrics 2013</em>. 6 2013.
+In <em>International Conference on Biometrics 2013</em>. June 2013.
 <a href="https://doi.org/10.1109/ICB.2013.6612981">doi:10.1109/ICB.2013.6612981</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/icb-2013-1.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@inproceedings{icb-2013-1,
     author = "de Freitas Pereira, Tiago and Anjos, André and Martino, José Mario De and Marcel, Sébastien",
     title = "Can face anti-spoofing countermeasures work in a real world scenario?",
     booktitle = "International Conference on Biometrics 2013",
-    month = "6",
+    month = "June",
     year = "2013",
     doi = "10.1109/ICB.2013.6612981",
     pdf = "https://www.idiap.ch/~aanjos/papers/icb-2013-1.pdf",
@@ -845,7 +858,7 @@ In <em>International Conference on Biometrics 2013</em>. 6 2013.
       <details>
         <summary>Ivana Chingovska, André Anjos, and Sébastien Marcel.
 Anti-spoofing in action: joint operation with a verification system.
-In <em>Computer Vision and Pattern Recognition Conference - Biometrics Workshop</em>. 6 2013.
+In <em>Computer Vision and Pattern Recognition Conference - Biometrics Workshop</em>. June 2013.
 <a href="https://doi.org/10.1109/CVPRW.2013.22">doi:10.1109/CVPRW.2013.22</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/cvpr-bw-2013.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@inproceedings{cvpr-bw-2013,
     author = "Chingovska, Ivana and Anjos, André and Marcel, Sébastien",
@@ -853,7 +866,7 @@ In <em>Computer Vision and Pattern Recognition Conference - Biometrics Workshop<
     booktitle = "Computer Vision and Pattern Recognition Conference - Biometrics Workshop",
     year = "2013",
     doi = "10.1109/CVPRW.2013.22",
-    month = "6",
+    month = "June",
     pdf = "https://www.idiap.ch/~aanjos/papers/cvpr-bw-2013.pdf",
     abstract = "Besides the recognition task, today’s biometric systems need to cope with additional problem: spoofing attacks. Up to date, academic research considers spoofing as a binary classification problem: systems are trained to discriminate between real accesses and attacks. However, spoofing counter-measures are not designated to operate stand-alone, but as a part of a recognition system they will protect. In this paper, we study techniques for decisionlevel and score-level fusion to integrate a recognition and anti-spoofing systems, using an open-source framework that handles the ternary classification problem (clients, impostors and attacks) transparently. By doing so, we are able to report the impact of different spoofing counter-measures, fusion techniques and thresholding on the overall performance of the final recognition system. For a specific use case covering face verification, experiments show to what extent simple fusion improves the trustworthiness of the system when exposed to spoofing attacks."
 }
@@ -912,14 +925,14 @@ In <em>International Workshop on Computer Vision With Local Binary Pattern Varia
       <details>
         <summary>André Anjos and Sébastien Marcel.
 Counter-measures to photo attacks in face recognition: a public database and a baseline.
-In <em>International Joint Conference on Biometrics 2011</em>. 10 2011.
+In <em>International Joint Conference on Biometrics 2011</em>. October 2011.
 <a href="https://doi.org/10.1109/IJCB.2011.6117503">doi:10.1109/IJCB.2011.6117503</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/ijcb-2011-2.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@inproceedings{ijcb-2011-2,
     author = "Anjos, André and Marcel, Sébastien",
     title = "Counter-Measures to Photo Attacks in Face Recognition: a public database and a baseline",
     booktitle = "International Joint Conference on Biometrics 2011",
     year = "2011",
-    month = "10",
+    month = "October",
     pdf = "https://www.idiap.ch/~aanjos/papers/ijcb-2011-2.pdf",
     doi = "10.1109/IJCB.2011.6117503",
     abstract = "A common technique to by-pass 2-D face recognition systems is to use photographs of spoofed identities. Unfortunately, research in counter-measures to this type of attack have not kept-up - even if such threats have been known for nearly a decade, there seems to exist no consensus on best practices, techniques or protocols for developing and testing spoofing-detectors for face recognition. We attribute the reason for this delay, partly, to the unavailability of public databases and protocols to study solutions and compare results. To this purpose we introduce the publicly available PRINT-ATTACK database and exemplify how to use its companion protocol with a motion-based algorithm that detects correlations between the person\'s head movements and the scene context. The results are to be used as basis for comparison to other counter-measure techniques. The PRINT-ATTACK database contains 200 videos of real-accesses and 200 videos of spoof attempts using printed photographs of 50 different identities."
@@ -929,14 +942,14 @@ In <em>International Joint Conference on Biometrics 2011</em>. 10 2011.
       <details>
         <summary>Murali&nbsp;Mohan Chakka, André Anjos, Sébastien Marcel, and others.
 Competition on counter measures to 2-d facial spoofing attacks.
-In <em>International Joint Conference on Biometrics 2011</em>. 10 2011.
+In <em>International Joint Conference on Biometrics 2011</em>. October 2011.
 <a href="https://doi.org/10.1109/IJCB.2011.6117509">doi:10.1109/IJCB.2011.6117509</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/ijcb-2011.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@inproceedings{ijcb-2011,
     author = "Chakka, Murali Mohan and Anjos, André and Marcel, Sébastien and others",
     title = "Competition on Counter Measures to 2-D Facial Spoofing Attacks",
     booktitle = "International Joint Conference on Biometrics 2011",
     year = "2011",
-    month = "10",
+    month = "October",
     doi = "10.1109/IJCB.2011.6117509",
     pdf = "https://www.idiap.ch/~aanjos/papers/ijcb-2011.pdf",
     abstract = "Spoofing identities using photographs is one of the most common techniques to attack 2-D face recognition systems. There seems to exist no comparative studies of different techniques using the same protocols and data. The motivation behind this competition is to compare the performance of different state-of-the-art algorithms on the same database using a unique evaluation method. Six different teams from universities around the world have participated in the contest. Use of one or multiple techniques from motion, texture analysis and liveness detection appears to be the common trend in this competition. Most of the algorithms are able to clearly separate spoof attempts from real accesses. The results suggest the investigation of more complex attacks."
@@ -1002,14 +1015,14 @@ In <em>Physics at LHC 2008 29 September - October 4, 2008 Split, Croatia</em>. 2
       <details>
         <summary>R.C. Torres, A.&nbsp;Anjos, and J.M. Seixas.
 Automatizing the online filter test management for a general-purpose particle detector.
-<em>Computer Physics Communications</em>, 10 2009.
+<em>Computer Physics Communications</em>, October 2009.
 <a href="https://doi.org/10.1016/j.cpc.2010.10.003">doi:10.1016/j.cpc.2010.10.003</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/cpc-2009.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{cpc-2009,
     author = "Torres, R.C. and Anjos, A. and Seixas, J.M.",
     title = "Automatizing the Online Filter Test Management for a General-Purpose Particle Detector",
     journal = "Computer Physics Communications",
     year = "2009",
-    month = "10",
+    month = "October",
     doi = "10.1016/j.cpc.2010.10.003",
     OPTvolume = "",
     OPTnumber = "",
@@ -1091,13 +1104,13 @@ In <em>Experimental High-Energy Physics and Associated Technologies Workshop</em
       <details>
         <summary>The&nbsp;ATLAS Collaboration.
 The atlas experiment at the cern large hadron collider.
-<em>Journal of Instrumentation</em>, 8 2008.</summary>
+<em>Journal of Instrumentation</em>, August 2008.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/jinst-2008.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{jinst-2008,
     author = "Collaboration, The ATLAS",
     title = "The ATLAS Experiment at the CERN Large Hadron Collider",
     journal = "Journal of Instrumentation",
     year = "2008",
-    month = "8",
+    month = "August",
     OPTvolume = "",
     number = "S08003",
     OPTpages = "",
@@ -1160,13 +1173,13 @@ In <em>International Workshop on Advanced Computing and Analysis Techniques in P
       <details>
         <summary>Thiago&nbsp;Ciodaro Xavier, André&nbsp;Rabello Anjos, and José&nbsp;Manoel de&nbsp;Seixas.
 Discriminação neural de partículas para um detector submetido a uma alta taxa de eventos.
-<em>Learning and Nonlinear Models - Revista da Sociedade Brasileira de Redes Neurais (SBRN)</em>, 4(2):79–92, 10 2007.</summary>
+<em>Learning and Nonlinear Models - Revista da Sociedade Brasileira de Redes Neurais (SBRN)</em>, 4(2):79–92, October 2007.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/sbrn-2007.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{sbrn-2007,
     author = "Xavier, Thiago Ciodaro and Anjos, André Rabello and de Seixas, José Manoel",
     title = "Discriminação Neural de Partículas para um Detector Submetido a uma Alta Taxa de Eventos",
     journal = "Learning and Nonlinear Models - Revista da Sociedade Brasileira de Redes Neurais (SBRN)",
     year = "2007",
-    month = "10",
+    month = "October",
     volume = "4",
     number = "2",
     pages = "79--92",
@@ -1329,13 +1342,13 @@ PhD thesis, COPPE/UFRJ, 2006.</summary>
       <details>
         <summary>The&nbsp;ATLAS Collaboration.
 The atlas data acquisition and trigger : concept, design and status.
-<em>Nucl. Phys. B, Proc. Suppl.</em>, 172:178–182, 11 2006.</summary>
+<em>Nucl. Phys. B, Proc. Suppl.</em>, 172:178–182, November 2006.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/nimb-2006.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{nimb-2006,
     author = "Collaboration, The ATLAS",
     title = "The ATLAS Data Acquisition and Trigger : concept, design and status",
     journal = "Nucl. Phys. B, Proc. Suppl.",
     year = "2006",
-    month = "11",
+    month = "November",
     volume = "172",
     OPTnumber = "",
     pages = "178--182",
@@ -1347,13 +1360,13 @@ The atlas data acquisition and trigger : concept, design and status.
       <details>
         <summary>A.&nbsp;Anjos, R.C. Torres, J.M. Seixas, B.C. Ferreira, and T.C. Xavier.
 Neural triggering system operating on high resolution calorimetry information.
-<em>Nuclear Instruments and Methods in Physics Research</em>, 559:134–138, 4 2006.</summary>
+<em>Nuclear Instruments and Methods in Physics Research</em>, 559:134–138, April 2006.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/nima-2006.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{nima-2006,
     author = "Anjos, A. and Torres, R.C. and Seixas, J.M. and Ferreira, B.C. and Xavier, T.C.",
     title = "Neural triggering system operating on high resolution calorimetry information",
     journal = "Nuclear Instruments and Methods in Physics Research",
     year = "2006",
-    month = "4",
+    month = "April",
     volume = "559",
     OPTnumber = "",
     pages = "134--138",
@@ -1365,13 +1378,13 @@ Neural triggering system operating on high resolution calorimetry information.
       <details>
         <summary>André&nbsp;Anjos on&nbsp;behalf of&nbsp;the ATLAS&nbsp;Collaboration.
 A configuration system for the atlas trigger.
-<em>Journal of Instrumentation, Institute of Physics Publishing and Sissa</em>, 2 2006.</summary>
+<em>Journal of Instrumentation, Institute of Physics Publishing and Sissa</em>, February 2006.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/jinst-2006.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{jinst-2006,
     author = "on behalf of the ATLAS Collaboration, André Anjos",
     title = "A configuration system for the ATLAS trigger",
     journal = "Journal of Instrumentation, Institute of Physics Publishing and Sissa",
     year = "2006",
-    month = "2",
+    month = "February",
     OPTvolume = "",
     number = "P05004",
     OPTpages = "",
@@ -1383,13 +1396,13 @@ A configuration system for the atlas trigger.
       <details>
         <summary>André&nbsp;Anjos on&nbsp;behalf of&nbsp;the ATLAS&nbsp;Collaboration.
 Deployment of the atlas high-level trigger.
-<em>IEEE Transactions on Nuclear Science</em>, 53:2144–2149, 8 2006.</summary>
+<em>IEEE Transactions on Nuclear Science</em>, 53:2144–2149, August 2006.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/ieee-tns-2006.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{ieee-tns-2006,
     author = "on behalf of the ATLAS Collaboration, André Anjos",
     title = "Deployment of the ATLAS High-Level Trigger",
     journal = "IEEE Transactions on Nuclear Science",
     year = "2006",
-    month = "8",
+    month = "August",
     volume = "53",
     OPTnumber = "",
     pages = "2144--2149",
@@ -1453,13 +1466,13 @@ In <em>15th International Conference on Computing In High Energy and Nuclear Phy
       <details>
         <summary>André&nbsp;Anjos on&nbsp;behalf of&nbsp;the ATLAS&nbsp;Collaboration.
 Configuration of the atlas trigger.
-In <em>14th IEEE NPSS Real Time Conference</em>, 990–994. 6 2005.</summary>
+In <em>14th IEEE NPSS Real Time Conference</em>, 990–994. June 2005.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/rt-2005.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@inproceedings{rt-2005,
     author = "on behalf of the ATLAS Collaboration, André Anjos",
     title = "Configuration of the ATLAS trigger",
     booktitle = "14th IEEE NPSS Real Time Conference",
     year = "2005",
-    month = "6",
+    month = "June",
     pages = "990--994",
     pdf = "https://www.idiap.ch/~aanjos/papers/rt-2005.pdf",
     abstract = "The ATLAS detector at CERN's LHC will be exposed to proton-proton collisions at a rate of 40 MHz. In order to reduce the data rate to about 200 Hz, only potentially interesting events are selected by a three-level trigger system. Its first level is implemented in electronics and firmware whereas the higher trigger levels are based on software. To prepare the full trigger chain for the online event selection according to a certain strategy, a system is being set up that provides the relevant configuration information - e.g. values for hardware registers in level-1 or parameters of high-level trigger algorithms - and stores the corresponding history. The same information is used to configure the offline trigger simulation. In this presentation an overview of the ATLAS trigger system is given concentrating on the event selection strategy and its description. The technical implementation of the configuration system is summarized."
@@ -1469,13 +1482,13 @@ In <em>14th IEEE NPSS Real Time Conference</em>, 990–994. 6 2005.</summary>
       <details>
         <summary>The&nbsp;ATLAS Collaboration.
 Overview of the high-level trigger electron and photon selection for the atlas experiment at the lhc.
-<em>IEEE Transactions Nuclear Sciences (2005)</em>, 53:2839–2843, 6 2005.</summary>
+<em>IEEE Transactions Nuclear Sciences (2005)</em>, 53:2839–2843, June 2005.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/ieee-tns-2005-3.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{ieee-tns-2005-3,
     author = "Collaboration, The ATLAS",
     title = "Overview of the High-Level Trigger Electron and Photon Selection for the ATLAS Experiment at the LHC",
     journal = "IEEE Transactions Nuclear Sciences (2005)",
     year = "2005",
-    month = "6",
+    month = "June",
     volume = "53",
     OPTnumber = "",
     pages = "2839--2843",
@@ -1487,13 +1500,13 @@ Overview of the high-level trigger electron and photon selection for the atlas e
       <details>
         <summary>The&nbsp;ATLAS Collaboration.
 Implementation and performance of the seeded reconstruction for the atlas event filter selection software.
-<em>IEEE Trans. Nucl. Sciences</em>, 53 (2007):864–869, 6 2005.</summary>
+<em>IEEE Trans. Nucl. Sciences</em>, 53 (2007):864–869, June 2005.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/ieee-2005-2.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{ieee-tns-2005-2,
     author = "Collaboration, The ATLAS",
     title = "Implementation and Performance of the Seeded Reconstruction for the ATLAS Event Filter Selection Software",
     journal = "IEEE Trans. Nucl. Sciences",
     year = "2005",
-    month = "6",
+    month = "June",
     volume = "53 (2007)",
     pages = "864--869",
     pdf = "https://www.idiap.ch/~aanjos/papers/ieee-2005-2.pdf",
@@ -1504,13 +1517,13 @@ Implementation and performance of the seeded reconstruction for the atlas event 
       <details>
         <summary>The&nbsp;ATLAS Collaboration.
 Atlas dataflow: the read-out subsystem, results from trigger and data-acquisition system testbed studies and from modeling.
-<em>IEEE Trans. Nucl. Sciences</em>, 53 (2006):912–917, 6 2005.</summary>
+<em>IEEE Trans. Nucl. Sciences</em>, 53 (2006):912–917, June 2005.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/ieee-tns-2005.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{ieee-tns-2005,
     author = "Collaboration, The ATLAS",
     title = "ATLAS DataFlow: the Read-Out Subsystem, Results from Trigger and Data-Acquisition System Testbed Studies and from Modeling",
     journal = "IEEE Trans. Nucl. Sciences",
     year = "2005",
-    month = "6",
+    month = "June",
     volume = "53 (2006)",
     pages = "912--917",
     pdf = "https://www.idiap.ch/~aanjos/papers/ieee-tns-2005.pdf",
@@ -1555,13 +1568,13 @@ In <em>9th ICATAPP Conference on High Energy Physics</em>. 2005.</summary>
       <details>
         <summary>A.&nbsp;Anjos, R.C. Torres, B.C. Ferreira, T.C. Xavier, J.M Seixas, and D.O. Damazio.
 Otimização do sistema de trigger do segundo nível do atlas baseado em calorimetria.
-In <em>XXVI Encontro Nacional de Física de Partículas e Campos</em>. 10 2005.</summary>
+In <em>XXVI Encontro Nacional de Física de Partículas e Campos</em>. October 2005.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/enfpc-2005-2.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@inproceedings{enfpc-2005-2,
     author = "Anjos, A. and Torres, R.C. and Ferreira, B.C. and Xavier, T.C. and Seixas, J.M and Damazio, D.O.",
     title = "Otimização do Sistema de Trigger do Segundo Nível do ATLAS Baseado em Calorimetria",
     booktitle = "XXVI Encontro Nacional de Física de Partículas e Campos",
     year = "2005",
-    month = "10",
+    month = "October",
     pdf = "https://www.idiap.ch/~aanjos/papers/enfpc-2005-2.pdf",
     abstract = "Este trabalho apresenta um discriminador neural que opera sobre as quantidades calculadas pelo algoritmo T2Calo, responsável pela deteção elétron/jato no Segundo Nível de Filtragem do experimento ATLAS. Este sistema de deteção melhora a eficiência de deteção em quase 10 pontos percentuais, mantendo um nível de desempenho compatível com as restrições operacionais do sistema de filtragem."
 }
@@ -1570,13 +1583,13 @@ In <em>XXVI Encontro Nacional de Física de Partículas e Campos</em>. 10 2005.<
       <details>
         <summary>A.&nbsp;Anjos, R.C. Torres, B.C. Ferreira, T.C. Xavier, and J.M. de&nbsp;Seixas.
 Discriminação neural de elétrons no segundo nível de trigger do atlas.
-In <em>XXVI Encontro Nacional de Física de Partículas e Campos</em>. 10 2005.</summary>
+In <em>XXVI Encontro Nacional de Física de Partículas e Campos</em>. October 2005.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/enfpc-2005.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@inproceedings{enfpc-2005,
     author = "Anjos, A. and Torres, R.C. and Ferreira, B.C. and Xavier, T.C. and de Seixas, J.M.",
     title = "Discriminação Neural de Elétrons no Segundo Nível de Trigger do ATLAS",
     booktitle = "XXVI Encontro Nacional de Física de Partículas e Campos",
     year = "2005",
-    month = "10",
+    month = "October",
     pdf = "https://www.idiap.ch/~aanjos/papers/enfpc-2005.pdf",
     abstract = "Este trabalho apresenta um discriminador neural para o segundo nível de filtragem do ATLAS, atuando no problema de separação elétron/jato baseado em informações de calorimetria. Para reduzir a alta dimensionalidade dos dados de entrada, as regiões de interesse (RoI) identificadas no primeiro nível são organizadas em anéis concêntricos de deposição energética. Este tipo de pré-processamento dos dados permite eficiente compactação dos sinais e alcança elevada capacidade de identificar elétrons. Atualmente, esse sistema vem sendo portado para o ambiente de emulação do sistema de filtragem ATHENA, de modo a se obter uma avaliação realística de seu desempenho. O ambiente tem o objetivo de simular o comportamento do sistema de filtragem, ajudando, desta forma, no desenvolvimento e validação dos algoritmos. Em caráter comparativo, o sistema proposto foi também implementado usando a tecnologia DSP."
 }
@@ -1586,13 +1599,13 @@ In <em>XXVI Encontro Nacional de Física de Partículas e Campos</em>. 10 2005.<
       <details>
         <summary>The&nbsp;ATLAS Collaboration.
 Implementation and performance of the high level trigger electron and photon selection for the atlas experiment at the lhc.
-In <em>IEEE Nuclear Science Symposium and Medical Imaging Conference</em>. 10 2004.</summary>
+In <em>IEEE Nuclear Science Symposium and Medical Imaging Conference</em>. October 2004.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/nss-2004-3.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@inproceedings{nss-2004-3,
     author = "Collaboration, The ATLAS",
     title = "Implementation and Performance of the High Level Trigger Electron and Photon Selection for the ATLAS Experiment at the LHC",
     booktitle = "IEEE Nuclear Science Symposium and Medical Imaging Conference",
     year = "2004",
-    month = "10",
+    month = "October",
     pdf = "https://www.idiap.ch/~aanjos/papers/nss-2004-3.pdf",
     abstract = "The ATLAS experiment at the Large Hadron Collider (LHC) will face the challenge of efficiently selecting interesting candidate events in pp collisions at 14 TeV center of mass energy, while rejecting the enormous number of background events, stemming from an interaction rate of up to 10^9 Hz. The First Level trigger will reduce this rate to around O(100 kHz). Subsequently, the High Level Trigger (HLT), which is comprised of the Second Level trigger and the Event Filter, will need to further reduce this rate by a factor of O(10^3). The HLT selection is software based and will be implemented on commercial CPUs, using a common framework built on the standard ATLAS object oriented software architecture. In this paper an overview of the current implementation of the selection for electrons and photons in the HLT is given. The performance of this implementation has been evaluated using Monte Carlo simulations in terms of the efficiency for the signal channels, rate expected for the selection, data preparation times, and algorithm execution times. Besides the efficiency and rate estimates, some physics examples will be discussed, showing that the triggers are well adapted for the physics programme envisaged at LHC. The electron and photon trigger software is also being exercised at the ATLAS 2004 Combined Test Beam, where components from all ATLAS subdetectors are taking data together along the H8 SPS extraction line; from these tests a validation of the selection architecture chosen in a real on-line environment is expected."
 }
@@ -1601,13 +1614,13 @@ In <em>IEEE Nuclear Science Symposium and Medical Imaging Conference</em>. 10 20
       <details>
         <summary>The&nbsp;ATLAS Collaboration.
 Design, deployment and functional tests of the on-line event filter for the atlas experiment at lhc.
-In <em>Nuclear Science Symposium and Medical Imaging Conference</em>. 10 2004.</summary>
+In <em>Nuclear Science Symposium and Medical Imaging Conference</em>. October 2004.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/nss-2004-2.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@inproceedings{nss-2004-2,
     author = "Collaboration, The ATLAS",
     title = "Design, deployment and functional tests of the on-line Event Filter for the ATLAS experiment at LHC",
     booktitle = "Nuclear Science Symposium and Medical Imaging Conference",
     year = "2004",
-    month = "10",
+    month = "October",
     pdf = "https://www.idiap.ch/~aanjos/papers/nss-2004-2.pdf",
     abstract = "The Event Filter selection stage is a fundamental component of the ATLAS Trigger and Data Acquisition architecture. Its primary function is the reduction of data flow and rate to values acceptable by the mass storage operations and by the subsequent off-line data reconstruction and analysis steps. The computing instrument of the EF is generally organized as a set of independent sub-farms, each connected to one output of the Event Builder switch fabric. Each sub-farm comprises a number of processors analyzing several complete events in parallel. This paper describes the design of the ATLAS EF system, its deployment in the 2004 ATLAS combined test beam together with some examples of integrating selection and monitoring algorithms. Since the processing algorithms are not specially designed for EF but are inherited as much as possible from the off-line ones, special emphasis is reserved to system reliability and data security, in particular for the case of failures in the processing algorithms. Another key design element has been system modularity and scalability. The EF shall be able to follow technology evolution and should allow for using additional processing resources possibly remotely located."
 }
@@ -1633,13 +1646,13 @@ In <em>Nuclear Science Symposium and Medical Imaging Conference</em>. 2004.</sum
       <details>
         <summary>The&nbsp;ATLAS Collaboration.
 Architecture of the atlas high level trigger event selection software.
-<em>Nucl. Instrum. Methods Phys. Res.</em>, 518(1–2):537–541, 2 2004.</summary>
+<em>Nucl. Instrum. Methods Phys. Res.</em>, 518(1–2):537–541, February 2004.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/nima-2004.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{nima-2004,
     author = "Collaboration, The ATLAS",
     title = "Architecture of the ATLAS high level trigger event selection software",
     journal = "Nucl. Instrum. Methods Phys. Res.",
     year = "2004",
-    month = "2",
+    month = "February",
     volume = "518",
     number = "1--2",
     pages = "537--541",
@@ -1651,13 +1664,13 @@ Architecture of the atlas high level trigger event selection software.
       <details>
         <summary>J.T. Baines, C.P. Bee, A.&nbsp;Bogaerts, M.&nbsp;Bosman, D.&nbsp;Botterill, B.&nbsp;Caron, A.&nbsp;Anjos, F.&nbsp;Etienne, S.&nbsp;González, K.&nbsp;Karr, W.&nbsp;Li, C.&nbsp;Meessen, G.&nbsp;Merino, A.&nbsp;Negri, J.&nbsp;L. Pinfold, P.&nbsp;Pinto, Z.&nbsp;Qian, F.&nbsp;Touchard, P.&nbsp;Werner, S.&nbsp;Wheeler, F.J. Wickens, W.&nbsp;Wiedenmann, and G.&nbsp;Zobernig.
 An overview of the atlas high-level trigger dataflow and supervision.
-<em>IEEE Transaction on Nuclear Science</em>, 51(3):361–366, 6 2004.</summary>
+<em>IEEE Transaction on Nuclear Science</em>, 51(3):361–366, June 2004.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/ieee-tns-2004-7.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{ieee-tns-2004-7,
     author = "Baines, J.T. and Bee, C.P. and Bogaerts, A. and Bosman, M. and Botterill, D. and Caron, B. and Anjos, A. and Etienne, F. and González, S. and Karr, K. and Li, W. and Meessen, C. and Merino, G. and Negri, A. and Pinfold, J. L. and Pinto, P. and Qian, Z. and Touchard, F. and Werner, P. and Wheeler, S. and Wickens, F.J. and Wiedenmann, W. and Zobernig, G.",
     title = "An Overview of the ATLAS High-Level Trigger Dataflow and Supervision",
     journal = "IEEE Transaction on Nuclear Science",
     year = "2004",
-    month = "6",
+    month = "June",
     volume = "51",
     number = "3",
     pages = "361--366",
@@ -1669,13 +1682,13 @@ An overview of the atlas high-level trigger dataflow and supervision.
       <details>
         <summary>André&nbsp;Anjos on&nbsp;behalf of&nbsp;the ATLAS&nbsp;Collaboration.
 The second level trigger of the atlas experiment at cern's lhc.
-<em>IEEE Transaction on Nuclear Science</em>, 51(3):909–914, 7 2004.</summary>
+<em>IEEE Transaction on Nuclear Science</em>, 51(3):909–914, July 2004.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/ieee-tns-2004-6.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{ieee-tns-2004-6,
     author = "on behalf of the ATLAS Collaboration, André Anjos",
     title = "The Second Level Trigger of the ATLAS Experiment at CERN's LHC",
     journal = "IEEE Transaction on Nuclear Science",
     year = "2004",
-    month = "7",
+    month = "July",
     volume = "51",
     number = "3",
     pages = "909--914",
@@ -1687,13 +1700,13 @@ The second level trigger of the atlas experiment at cern's lhc.
       <details>
         <summary>The&nbsp;ATLAS Collaboration.
 Algorithms for the atlas high-level trigger.
-<em>IEEE Transactions on Nuclear Science</em>, 51(3):367–374, 6 2004.</summary>
+<em>IEEE Transactions on Nuclear Science</em>, 51(3):367–374, June 2004.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/ieee-tns-2004-5.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{ieee-tns-2004-5,
     author = "Collaboration, The ATLAS",
     title = "Algorithms for the ATLAS high-level trigger",
     journal = "IEEE Transactions on Nuclear Science",
     year = "2004",
-    month = "6",
+    month = "June",
     volume = "51",
     number = "3",
     pages = "367--374",
@@ -1705,13 +1718,13 @@ Algorithms for the atlas high-level trigger.
       <details>
         <summary>The&nbsp;ATLAS Collaboration.
 The base-line dataflow system of the atlas trigger and daq.
-<em>IEEE Transactions on Nuclear Science</em>, 51(3):470–475, 6 2004.</summary>
+<em>IEEE Transactions on Nuclear Science</em>, 51(3):470–475, June 2004.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/ieee-tns-2004-4.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{ieee-tns-2004-4,
     author = "Collaboration, The ATLAS",
     title = "The base-line DataFlow system of the ATLAS Trigger and DAQ",
     journal = "IEEE Transactions on Nuclear Science",
     year = "2004",
-    month = "6",
+    month = "June",
     volume = "51",
     number = "3",
     pages = "470--475",
@@ -1723,13 +1736,13 @@ The base-line dataflow system of the atlas trigger and daq.
       <details>
         <summary>The&nbsp;ATLAS Collaboration.
 Atlas tdaq data collection software.
-<em>IEEE Transactions on Nuclear Science</em>, 51:585–590, 6 2004.</summary>
+<em>IEEE Transactions on Nuclear Science</em>, 51:585–590, June 2004.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/ieee-tns-2004-3.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{ieee-tns-2004-3,
     author = "Collaboration, The ATLAS",
     title = "ATLAS TDAQ data collection software",
     journal = "IEEE Transactions on Nuclear Science",
     year = "2004",
-    month = "6",
+    month = "June",
     volume = "51",
     OPTnumber = "",
     pages = "585--590",
@@ -1741,13 +1754,13 @@ Atlas tdaq data collection software.
       <details>
         <summary>The&nbsp;ATLAS Collaboration.
 Studies for a common selection software environment in atlas : from the level-2 trigger to the offline reconstruction.
-<em>IEEE Transactions on Nuclear Science</em>, 51(3):915–920, 6 2004.</summary>
+<em>IEEE Transactions on Nuclear Science</em>, 51(3):915–920, June 2004.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/ieee-tns-2004-2.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{ieee-tns-2004-2,
     author = "Collaboration, The ATLAS",
     title = "Studies for a common selection software environment in ATLAS : from the Level-2 Trigger to the offline reconstruction",
     journal = "IEEE Transactions on Nuclear Science",
     year = "2004",
-    month = "6",
+    month = "June",
     volume = "51",
     number = "3",
     pages = "915--920",
@@ -1759,13 +1772,13 @@ Studies for a common selection software environment in atlas : from the level-2 
       <details>
         <summary>A.&nbsp;Anjos and J.M. Seixas.
 Os filtros de alto nível do experimento atlas.
-In <em>XXVI Encontro Nacional de Física de Partículas e Campos</em>. 8 2004.</summary>
+In <em>XXVI Encontro Nacional de Física de Partículas e Campos</em>. August 2004.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/enfpc-2004.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@inproceedings{enfpc-2004,
     author = "Anjos, A. and Seixas, J.M.",
     title = "Os Filtros de Alto Nível do Experimento ATLAS",
     booktitle = "XXVI Encontro Nacional de Física de Partículas e Campos",
     year = "2004",
-    month = "8",
+    month = "August",
     pdf = "https://www.idiap.ch/~aanjos/papers/enfpc-2004.pdf",
     abstract = "O Experimento ATLAS conta com um sistema de Filtragem bastante complexo e dividido em 4 grandes sub-sistemas: (i) O Primeiro Nível de Filtragem que realiza os primeiros passos da seleção de eventos na cadeia de filtragem; (ii) O Software Online, responsável pelas áreas de controle e operação do sistema;(iii) O Sistema de Fluxo de Dados (Dataflow) que coordena a transmissão e armazenamento dos dados do detetor do experimento; (iv) Os Filtros de Alto Nível, que implementam os algoritmos de discriminação, representando o topo da cadeia de seleção de eventos no ATLAS. Para aumentar a portabilidade entre os algoritmos de filtragem desenvolvidos por toda a comunidade do experimento, os desenvolvedores dos Filtros de Alto Nível (ou simplesmente HLT; High-Level Triggers) propuseram a reutilização do ambiente de programação online Athena dentro do sistema que operará em tempo real. Para tal, o HLT utiliza as ferramentas propostas pelo sub-sistema de Fluxo de Dados para coordenar as operações da transferência de informação para dentro e para fora dos nós de processamento sistema. Dentre outras restrições, o produto final deverá ser suficientemente rápido e operável em tarefas concorrentes em máquinas (SMP) com vários processadores rodando Linux. Neste trabalho apresentamos alguns dos problemas e soluções encontrados pelo grupo no desenvolvimento e teste do conjunto de bibliotecas que compõe o HLT."
 }
@@ -1774,14 +1787,14 @@ In <em>XXVI Encontro Nacional de Física de Partículas e Campos</em>. 8 2004.</
       <details>
         <summary>The&nbsp;ATLAS Collaboration.
 Performance of the atlas daq dataflow system.
-In <em>Computing in High Energy Physics and Nuclear Physics</em>. 10 2004.
+In <em>Computing in High Energy Physics and Nuclear Physics</em>. October 2004.
 <a href="https://doi.org/10.5170/CERN-2005-002.91">doi:10.5170/CERN-2005-002.91</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/chep-2004-2.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@inproceedings{chep-2004-2,
     author = "Collaboration, The ATLAS",
     title = "Performance of the ATLAS DAQ DataFlow system",
     booktitle = "Computing in High Energy Physics and Nuclear Physics",
     year = "2004",
-    month = "10",
+    month = "October",
     doi = "10.5170/CERN-2005-002.91",
     pdf = "https://www.idiap.ch/~aanjos/papers/chep-2004-2.pdf",
     abstract = "The baseline DAQ architecture of the ATLAS Experiment at LHC is introduced and its present implementation and the performance of the DAQ components as measured in a laboratory environment are summarized. It will be shown that the discrete event simulation model of the DAQ system, tuned using these measurements, does predict the behaviour of the prototype configurations well, after which, predictions for the final ATLAS system are presented. With the currently available hardware and software, a system using ~140 ROSs with 3GHz single cpu, ~100 SFIs with dual 2.4 GHz cpu and ~500 L2PUs with dual 3.06 GHz cpu."
@@ -1791,13 +1804,13 @@ In <em>Computing in High Energy Physics and Nuclear Physics</em>. 10 2004.
       <details>
         <summary>The&nbsp;ATLAS Collaboration.
 Portable gathering system for monitoring and online calibration at atlas.
-In <em>Computing in High Energy Physics and Nuclear Physics 2004</em>. 10 2004.</summary>
+In <em>Computing in High Energy Physics and Nuclear Physics 2004</em>. October 2004.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/chep-2004.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@inproceedings{chep-2004,
     author = "Collaboration, The ATLAS",
     title = "Portable Gathering System for Monitoring and Online Calibration at ATLAS",
     booktitle = "Computing in High Energy Physics and Nuclear Physics 2004",
     year = "2004",
-    month = "10",
+    month = "October",
     pdf = "https://www.idiap.ch/~aanjos/papers/chep-2004.pdf",
     abstract = "During the runtime of any experiment, a central monitoring system that detects problems as soon as they appear has an essential role. In a large experiment, like ATLAS, the online data acquisition system is distributed across the nodes of large farms, each of them running several processes that analyse a fraction of the events. In this architecture, it is necessary to have a central process that collects all the monitoring data from the different nodes, produces full statistics histograms and analyses them. In this paper we present the design of such a system, called the gatherer. It allows to collect any monitoring object, such as histograms, from the farm nodes, from any process in the DAQ, trigger and reconstruction chain. It also adds up the statistics, if required, and processes user defined algorithms in order to analyse the monitoring data. The results are sent to a centralized display, that shows the information online, and to the archiving system, triggering alarms in case of problems. The innovation of this system is that conceptually it abstracts several underlying communication protocols, being able to talk with different processes using different protocols at the same time and, therefore, providing maximum flexibility. The software is easily adaptable to any trigger-DAQ system. The first prototype of the gathering system has been implemented for ATLAS and has been running during this year\'s combined test beam. An evaluation of this first prototype will also be presented."
 }
@@ -1807,14 +1820,14 @@ In <em>Computing in High Energy Physics and Nuclear Physics 2004</em>. 10 2004.<
       <details>
         <summary>A.&nbsp;Anjos and J.M. Seixas.
 Neural particle discrimination for triggering interesting physics channels with calorimetry data.
-<em>Nuclear Instruments And Methods In Physics Research A - Accelerators, Spectrometers, Detectors And Associated Equipament</em>, 502:713–715, 8 2003.
+<em>Nuclear Instruments And Methods In Physics Research A - Accelerators, Spectrometers, Detectors And Associated Equipament</em>, 502:713–715, August 2003.
 <a href="https://doi.org/10.1016/S0168-9002(03)00553-9">doi:10.1016/S0168-9002(03)00553-9</a>.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/nima-2003.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{nima-2003,
     author = "Anjos, A. and Seixas, J.M.",
     title = "Neural particle discrimination for triggering interesting physics channels with calorimetry data",
     journal = "Nuclear Instruments And Methods In Physics Research A - Accelerators, Spectrometers, Detectors And Associated Equipament",
     year = "2003",
-    month = "8",
+    month = "August",
     volume = "502",
     pages = "713--715",
     doi = "10.1016/S0168-9002(03)00553-9",
@@ -1826,13 +1839,13 @@ Neural particle discrimination for triggering interesting physics channels with 
       <details>
         <summary>The&nbsp;ATLAS Collaboration.
 An overview of algorithms for the atlas high level trigger.
-<em>IEEE Transactions on Nuclear Science</em>, 51(3 (2004)):367–374, 6 2003.</summary>
+<em>IEEE Transactions on Nuclear Science</em>, 51(3 (2004)):367–374, June 2003.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/ieee-tns-2004.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{ieee-tns-2004,
     author = "Collaboration, The ATLAS",
     title = "An Overview of Algorithms for the ATLAS High Level Trigger",
     journal = "IEEE Transactions on Nuclear Science",
     year = "2003",
-    month = "6",
+    month = "June",
     volume = "51",
     number = "3 (2004)",
     pages = "367--374",
@@ -2016,13 +2029,13 @@ In <em>International Meeting on Vector and Parallel Processing (VECPAR)</em>. 19
       <details>
         <summary>J.M. Seixas, L.P. Caloba, A.R. Anjos, B.&nbsp;Kastrup, A.C.H. Dantas, and R.&nbsp;Linhares.
 A neural online triggering system based on parallel processing.
-<em>IEEE Transactions on Nuclear Science</em>, 45(4):1814–1818, 8 1998.</summary>
+<em>IEEE Transactions on Nuclear Science</em>, 45(4):1814–1818, August 1998.</summary>
 <br/><a href="https://www.idiap.ch/~aanjos/papers/ieee-tns-1998.pdf" target="_blank"><b>Article:</b> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>        <br/><pre class="bibtex">@article{ieee-tns-1998,
     author = "Seixas, J.M. and Caloba, L.P. and Anjos, A.R. and Kastrup, B. and Dantas, A.C.H. and Linhares, R.",
     title = "A neural online triggering system based on parallel processing",
     journal = "IEEE Transactions on Nuclear Science",
     year = "1998",
-    month = "8",
+    month = "August",
     volume = "45",
     number = "4",
     pages = "1814--1818",
