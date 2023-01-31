@@ -285,6 +285,23 @@ main {
     section#isso-thread .auth-section .input-wrapper {
       margin-right: 5px;
     }
+
+    .toc {
+      margin-top: 2em;
+
+      .toctitle {
+        font-size: 1.3em
+      }
+
+      ul {
+        list-style: none;
+        padding-inline-start: 1rem;
+      }
+
+      > ul {
+        padding: 0;
+      }
+    }
   }
 
   footer {
@@ -480,7 +497,7 @@ ul.social {
     background-color: @github-bg-color;
   }
 
-  a.sc-envelope {
+  a.sc-at, a.sc-mailbox, a.sc-envelope {
     background-color: @email-bg-color;
   }
 
@@ -713,9 +730,16 @@ div.admonition.warning {
   background-color: @admonition-warning-bg-color;
 }
 
+figure,
 div.figure {
   font-size: 90%;
   color: @figure-color;
+
+  figcaption {
+    margin-top: 0.5em;
+    text-align: center;
+    color: @text-color;
+  }
 
   img {
     vertical-align: middle;
@@ -737,16 +761,45 @@ div.figure {
   }
 }
 
+figure.align-left,
 div.figure.align-left {
   text-align: left;
 }
 
+figure.align-center,
 div.figure.align-center {
   text-align: center;
 }
 
+figure.align-right,
 div.figure.align-right {
   text-align: right;
+}
+
+.github-corner:hover .octo-arm {
+  animation:octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+  0%,100% {
+    transform:rotate(0);
+  }
+  20%,60% {
+    transform:rotate(-25deg);
+  }
+  40%,80% {
+    transform:rotate(10deg);
+  }
+}
+
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+    animation:none;
+  }
+
+  .github-corner .octo-arm{
+    animation:octocat-wave 560ms ease-in-out;
+  }
 }
 
 //handles the special case in which we have a "caption" after a series of
