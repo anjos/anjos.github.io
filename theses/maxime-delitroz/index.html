@@ -10,25 +10,25 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="../theme/stylesheet/style.min.css">
+    <link rel="stylesheet" type="text/css" href="../../theme/stylesheet/style.min.css">
 
     <link id="dark-theme-style" rel="stylesheet" type="text/css"
           media="(prefers-color-scheme: dark)"
-    href="../theme/stylesheet/dark-theme.min.css">
+    href="../../theme/stylesheet/dark-theme.min.css">
 
     <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
               media="(prefers-color-scheme: dark)"
-          href="../theme/pygments/solarized-dark.min.css">
+          href="../../theme/pygments/solarized-dark.min.css">
     <link id="pygments-light-theme" rel="stylesheet" type="text/css"
               media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-          href="../theme/pygments/solarized-light.min.css">
+          href="../../theme/pygments/solarized-light.min.css">
 
 
 
   <script src="https://kit.fontawesome.com/7ecc466543.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
-  <link rel="stylesheet" type="text/css" href="../css/custom.css">
+  <link rel="stylesheet" type="text/css" href="../../css/custom.css">
 
   <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
@@ -86,17 +86,24 @@
     <meta name="msapplication-TileColor" content="#333">
 
 
-    <meta name="author" content="André Anjos" />
-    <meta name="description" content="Professional Website" />
-  <meta property="og:site_name" content="André Anjos"/>
-  <meta property="og:type" content="blog"/>
-  <meta property="og:title" content="André Anjos"/>
-  <meta property="og:description" content="Professional Website"/>
-  <meta property="og:locale" content="en_US"/>
-  <meta property="og:url" content=".."/>
-  <meta property="og:image" content="/images/profile_128.png">
+<meta name="author" content="André Anjos" />
+<meta name="description" content="In this thesis, we sought at developing precise neuron segmentation in order to support future study on the morphological phenotype of amyotrophic lateral sclerosis." />
+<meta name="keywords" content="">
 
-  <title>André Anjos &ndash; Category software</title>
+
+  <meta property="og:site_name" content="André Anjos"/>
+  <meta property="og:title" content="Maxime Délitroz:"/>
+  <meta property="og:description" content="In this thesis, we sought at developing precise neuron segmentation in order to support future study on the morphological phenotype of amyotrophic lateral sclerosis."/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="../../theses/maxime-delitroz/"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2022-08-30 00:00:00+02:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="../../author/andre-anjos.html">
+  <meta property="article:section" content="theses"/>
+  <meta property="og:image" content="../../images/covers/maxime-delitroz.png">
+
+  <title>André Anjos &ndash; Maxime Délitroz:</title>
 
 
 </head>
@@ -104,12 +111,12 @@
 
 <aside>
   <div>
-    <a href="../">
+    <a href="../../">
       <img src="/images/profile_128.png" alt="André Anjos" title="André Anjos">
     </a>
 
     <h1>
-      <a href="../">André Anjos</a>
+      <a href="../../">André Anjos</a>
     </h1>
 
     <p>Machine Learning, Computer Vision, Medical Imaging & Health Data Analysis, Reproducibility, Ph.D.</p>
@@ -197,59 +204,50 @@
   <main>
 
 
-
-
-<article>
-  <img class="cover" src="/images/covers/bob.svg" alt="">
+<article class="single">
   <header>
-    <h2><a href="../software/bob/">Bob</a></h2>
+      
+    <h1 id="maxime-delitroz">Maxime Délitroz:</h1>
     <p>
-      Posted on Tue 13 April 2021 in <a href="../software/">software</a>
-
+      Posted on Tue 30 August 2022 in <a href="../../theses/">theses</a>
 
     </p>
   </header>
+
+
   <div>
-      <div><p class="first last"><a class="reference external" href="https://www.idiap.ch/software/bob/">Bob</a> is a signal-processing and machine learning toolbox originally
-developed by the <a class="reference external" href="https://www.idiap.ch/en/scientific-research/biometrics-security-and-privacy">Biometrics Security and Privacy Group</a>, the
-<a class="reference external" href="http://www.idiap.ch/en/scientific-research/biosignal-processing">Biosignal Processing Group</a>, and the <a class="reference external" href="https://www.idiap.ch/en/people/development-engineers-group">Research and Development
-Engineers Group</a> at the <a class="reference external" href="https://www.idiap.ch">Idiap Research Institute</a>, in Switzerland.
-Bob is primarily developed through <a class="reference external" href="https://gitlab.idiap.ch/bob">GitLab</a>.</p>
+    <div class="figure align-center" style="width: 100%">
+<img alt="Visual comparison between Little U-Net model predictions and ground truth annotation" src="../../images/covers/maxime-delitroz.png" style="width: 90%;" />
+<p class="caption">Visual comparison between Little U-Net model predictions and ground truth
+annotation. (Image): contrast-enhanced image. (Ground truth): ground truth
+segmentation. (Model segmentation): segmentation generated by Little U-Net
+model. (Errors): error image where false positives and false negatives are
+represented in blue and red respectively.</p>
 </div>
-        <br>
-        <a class="btn"
-           href="../software/bob/">
-          Continue reading
-        </a>
+<p>In this thesis, we sought at developing precise neuron segmentation in order to
+support future study on the morphological phenotype of amyotrophic lateral
+sclerosis. We tackled this task by developing two different segmentation
+pipelines: the first one based on classical image and signal processing, and
+the second one based on a fully convolutional neural network architecture,
+capitalizing on our first pipeline segmentation's to bypass the need of labeled
+training data. We shown that both our method outperformed other segmentation
+tools used in the literature and shed light on important requirements for
+training neural network on segmentation tasks.</p>
+<p><span class="fa fa-file-pdf-o"></span> <a class="reference external" href="https://publidiap.idiap.ch/attachments/internals/2022/">Access the full thesis text from this link</a>.</p>
+<!-- Place your references here -->
+
   </div>
-  <hr />
-</article>
-<article>
-  <img class="cover" src="/images/logos/beat.png" alt="">
-  <header>
-    <h2><a href="../software/beat/">The BEAT Platform</a></h2>
+  <div class="tag-cloud">
     <p>
-      Posted on Wed 16 March 2016 in <a href="../software/">software</a>
-
-
     </p>
-  </header>
-  <div>
-      <div><p class="first last">The <a class="reference external" href="https://www.idiap.ch/software/beat/platform/">BEAT platform</a> is a European computing e-infrastructure for
-<a class="reference external" href="https://en.wikipedia.org/wiki/Open_science">Open Science</a> proposing a solution for open access, scientific
-information sharing and re-use including data and source code while
-protecting privacy and confidentiality.</p>
-</div>
-        <br>
-        <a class="btn"
-           href="../software/beat/">
-          Continue reading
-        </a>
   </div>
+
+
+
+
+
+
 </article>
-
-
-
 
 <footer>
 <p>&copy; André Anjos 2023</p>
@@ -260,7 +258,7 @@ protecting privacy and confidentiality.</p>
   "@context" : "http://schema.org",
   "@type" : "Blog",
   "name": " André Anjos ",
-  "url" : "..",
+  "url" : "../..",
   "image": "/images/profile_128.png",
   "description": "Professional Website"
 }

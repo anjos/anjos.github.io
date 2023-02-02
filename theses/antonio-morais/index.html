@@ -10,25 +10,25 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="../theme/stylesheet/style.min.css">
+    <link rel="stylesheet" type="text/css" href="../../theme/stylesheet/style.min.css">
 
     <link id="dark-theme-style" rel="stylesheet" type="text/css"
           media="(prefers-color-scheme: dark)"
-    href="../theme/stylesheet/dark-theme.min.css">
+    href="../../theme/stylesheet/dark-theme.min.css">
 
     <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
               media="(prefers-color-scheme: dark)"
-          href="../theme/pygments/solarized-dark.min.css">
+          href="../../theme/pygments/solarized-dark.min.css">
     <link id="pygments-light-theme" rel="stylesheet" type="text/css"
               media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-          href="../theme/pygments/solarized-light.min.css">
+          href="../../theme/pygments/solarized-light.min.css">
 
 
 
   <script src="https://kit.fontawesome.com/7ecc466543.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
-  <link rel="stylesheet" type="text/css" href="../css/custom.css">
+  <link rel="stylesheet" type="text/css" href="../../css/custom.css">
 
   <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
@@ -86,17 +86,24 @@
     <meta name="msapplication-TileColor" content="#333">
 
 
-    <meta name="author" content="André Anjos" />
-    <meta name="description" content="Professional Website" />
-  <meta property="og:site_name" content="André Anjos"/>
-  <meta property="og:type" content="blog"/>
-  <meta property="og:title" content="André Anjos"/>
-  <meta property="og:description" content="Professional Website"/>
-  <meta property="og:locale" content="en_US"/>
-  <meta property="og:url" content=".."/>
-  <meta property="og:image" content="/images/profile_128.png">
+<meta name="author" content="André Anjos" />
+<meta name="description" content="Performance measures are an important component of machine learning algorithms. They are useful when it comes to evaluate the quality of a model, but also to help the algorithm improve itself. When used in small data sets, these measures may not properly express the performance of the model. That is when confidence intervals and credible regions can be useful. Expressing the performance measures in a probabilistic setting allows one to develop them as distributions. One can then use those distributions to establish credible regions." />
+<meta name="keywords" content="">
 
-  <title>André Anjos &ndash; Category software</title>
+
+  <meta property="og:site_name" content="André Anjos"/>
+  <meta property="og:title" content="Antonio Morais: A Bayesian approach to machine learning model comparison"/>
+  <meta property="og:description" content="Performance measures are an important component of machine learning algorithms. They are useful when it comes to evaluate the quality of a model, but also to help the algorithm improve itself. When used in small data sets, these measures may not properly express the performance of the model. That is when confidence intervals and credible regions can be useful. Expressing the performance measures in a probabilistic setting allows one to develop them as distributions. One can then use those distributions to establish credible regions."/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="../../theses/antonio-morais/"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2022-02-28 10:00:00+01:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="../../author/andre-anjos.html">
+  <meta property="article:section" content="theses"/>
+  <meta property="og:image" content="../../images/covers/antonio-morais.png">
+
+  <title>André Anjos &ndash; Antonio Morais: A Bayesian approach to machine learning model comparison</title>
 
 
 </head>
@@ -104,12 +111,12 @@
 
 <aside>
   <div>
-    <a href="../">
+    <a href="../../">
       <img src="/images/profile_128.png" alt="André Anjos" title="André Anjos">
     </a>
 
     <h1>
-      <a href="../">André Anjos</a>
+      <a href="../../">André Anjos</a>
     </h1>
 
     <p>Machine Learning, Computer Vision, Medical Imaging & Health Data Analysis, Reproducibility, Ph.D.</p>
@@ -197,59 +204,58 @@
   <main>
 
 
-
-
-<article>
-  <img class="cover" src="/images/covers/bob.svg" alt="">
+<article class="single">
   <header>
-    <h2><a href="../software/bob/">Bob</a></h2>
+      
+    <h1 id="antonio-morais">Antonio Morais: A Bayesian approach to machine learning model comparison</h1>
     <p>
-      Posted on Tue 13 April 2021 in <a href="../software/">software</a>
-
+      Posted on Mon 28 February 2022 in <a href="../../theses/">theses</a>
 
     </p>
   </header>
+
+
   <div>
-      <div><p class="first last"><a class="reference external" href="https://www.idiap.ch/software/bob/">Bob</a> is a signal-processing and machine learning toolbox originally
-developed by the <a class="reference external" href="https://www.idiap.ch/en/scientific-research/biometrics-security-and-privacy">Biometrics Security and Privacy Group</a>, the
-<a class="reference external" href="http://www.idiap.ch/en/scientific-research/biosignal-processing">Biosignal Processing Group</a>, and the <a class="reference external" href="https://www.idiap.ch/en/people/development-engineers-group">Research and Development
-Engineers Group</a> at the <a class="reference external" href="https://www.idiap.ch">Idiap Research Institute</a>, in Switzerland.
-Bob is primarily developed through <a class="reference external" href="https://gitlab.idiap.ch/bob">GitLab</a>.</p>
+    <div class="figure align-center" style="width: 100%">
+<img alt="Probabilistic F1-score distribution for 2 systems using Monte Carlo simulations." src="../../images/covers/antonio-morais.png" style="width: 90%;" />
+<p class="caption">In this figure, we can see the distribution generation produced by the Monte
+Carlo simulation. If we only computed the F1-score using the usual formula
+we would have 0.571 for the first system and 0.315 for the second one so we
+would conclude that system 1 is way better than system 2. The probabilistic
+outlook gives another point of view. Even though the first model seems
+preferable as it is more consistent and has a better mode and average, the
+second model does not seem that far, and actually outperforms system 1 in
+43% of the cases.</p>
 </div>
-        <br>
-        <a class="btn"
-           href="../software/bob/">
-          Continue reading
-        </a>
+<p>Performance measures are an important component of machine learning algorithms.
+They are useful when it comes to evaluate the quality of a model, but also to
+help the algorithm improve itself. Every need has its own metric. However, when
+we have a small data set, these measures don’t express properly the performance
+of the model. That’s when confidence intervals and credible regions come in
+handy. Expressing the performance measures in a probabilistic setting lets us
+develop them as distributions. Then we can use those distributions to establish
+credible regions. In the first instance we will address the precision, recall
+and F1-score followed by the accuracy, specificity and Jaccard index. We will
+study the coverage of the credible regions computed through the posterior
+distributions. Then we will discuss ROC curve, precision-recall curve and
+k-fold cross-validation. Finally we will conclude with a small discussion about
+what we could do with dependent samples.</p>
+<p><span class="fa fa-file-pdf-o"></span> <a class="reference external" href="https://publidiap.idiap.ch/attachments/reports/2022/Morais_Idiap-Com-01-2023.pdf">Access the full thesis text from this link</a>.</p>
+<p><span class="fa fa-brands fa-python"></span> <a class="reference external" href="https://gitlab.idiap.ch/bob/bob.measure/-/merge_requests/103">Access to Python source code</a> (git repository).</p>
+<!-- Place your references here -->
+
   </div>
-  <hr />
-</article>
-<article>
-  <img class="cover" src="/images/logos/beat.png" alt="">
-  <header>
-    <h2><a href="../software/beat/">The BEAT Platform</a></h2>
+  <div class="tag-cloud">
     <p>
-      Posted on Wed 16 March 2016 in <a href="../software/">software</a>
-
-
     </p>
-  </header>
-  <div>
-      <div><p class="first last">The <a class="reference external" href="https://www.idiap.ch/software/beat/platform/">BEAT platform</a> is a European computing e-infrastructure for
-<a class="reference external" href="https://en.wikipedia.org/wiki/Open_science">Open Science</a> proposing a solution for open access, scientific
-information sharing and re-use including data and source code while
-protecting privacy and confidentiality.</p>
-</div>
-        <br>
-        <a class="btn"
-           href="../software/beat/">
-          Continue reading
-        </a>
   </div>
+
+
+
+
+
+
 </article>
-
-
-
 
 <footer>
 <p>&copy; André Anjos 2023</p>
@@ -260,7 +266,7 @@ protecting privacy and confidentiality.</p>
   "@context" : "http://schema.org",
   "@type" : "Blog",
   "name": " André Anjos ",
-  "url" : "..",
+  "url" : "../..",
   "image": "/images/profile_128.png",
   "description": "Professional Website"
 }

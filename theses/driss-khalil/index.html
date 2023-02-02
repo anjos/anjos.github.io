@@ -10,25 +10,25 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="../theme/stylesheet/style.min.css">
+    <link rel="stylesheet" type="text/css" href="../../theme/stylesheet/style.min.css">
 
     <link id="dark-theme-style" rel="stylesheet" type="text/css"
           media="(prefers-color-scheme: dark)"
-    href="../theme/stylesheet/dark-theme.min.css">
+    href="../../theme/stylesheet/dark-theme.min.css">
 
     <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
               media="(prefers-color-scheme: dark)"
-          href="../theme/pygments/solarized-dark.min.css">
+          href="../../theme/pygments/solarized-dark.min.css">
     <link id="pygments-light-theme" rel="stylesheet" type="text/css"
               media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-          href="../theme/pygments/solarized-light.min.css">
+          href="../../theme/pygments/solarized-light.min.css">
 
 
 
   <script src="https://kit.fontawesome.com/7ecc466543.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
-  <link rel="stylesheet" type="text/css" href="../css/custom.css">
+  <link rel="stylesheet" type="text/css" href="../../css/custom.css">
 
   <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
@@ -86,17 +86,24 @@
     <meta name="msapplication-TileColor" content="#333">
 
 
-    <meta name="author" content="André Anjos" />
-    <meta name="description" content="Professional Website" />
-  <meta property="og:site_name" content="André Anjos"/>
-  <meta property="og:type" content="blog"/>
-  <meta property="og:title" content="André Anjos"/>
-  <meta property="og:description" content="Professional Website"/>
-  <meta property="og:locale" content="en_US"/>
-  <meta property="og:url" content=".."/>
-  <meta property="og:image" content="/images/profile_128.png">
+<meta name="author" content="André Anjos" />
+<meta name="description" content="" />
+<meta name="keywords" content="">
 
-  <title>André Anjos &ndash; Category software</title>
+
+  <meta property="og:site_name" content="André Anjos"/>
+  <meta property="og:title" content="Driss Khalil: Multi-task Computer-Aided Segmentation for Eye Fundus Imaging"/>
+  <meta property="og:description" content=""/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="../../theses/driss-khalil/"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2022-07-15 10:00:00+02:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="../../author/andre-anjos.html">
+  <meta property="article:section" content="theses"/>
+  <meta property="og:image" content="../../images/covers/driss-khalil.png">
+
+  <title>André Anjos &ndash; Driss Khalil: Multi-task Computer-Aided Segmentation for Eye Fundus Imaging</title>
 
 
 </head>
@@ -104,12 +111,12 @@
 
 <aside>
   <div>
-    <a href="../">
+    <a href="../../">
       <img src="/images/profile_128.png" alt="André Anjos" title="André Anjos">
     </a>
 
     <h1>
-      <a href="../">André Anjos</a>
+      <a href="../../">André Anjos</a>
     </h1>
 
     <p>Machine Learning, Computer Vision, Medical Imaging & Health Data Analysis, Reproducibility, Ph.D.</p>
@@ -197,59 +204,77 @@
   <main>
 
 
-
-
-<article>
-  <img class="cover" src="/images/covers/bob.svg" alt="">
+<article class="single">
   <header>
-    <h2><a href="../software/bob/">Bob</a></h2>
+      
+    <h1 id="driss-khalil">Driss Khalil: Multi-task Computer-Aided Segmentation for Eye Fundus Imaging</h1>
     <p>
-      Posted on Tue 13 April 2021 in <a href="../software/">software</a>
-
+      Posted on Fri 15 July 2022 in <a href="../../theses/">theses</a>
 
     </p>
   </header>
+
+
   <div>
-      <div><p class="first last"><a class="reference external" href="https://www.idiap.ch/software/bob/">Bob</a> is a signal-processing and machine learning toolbox originally
-developed by the <a class="reference external" href="https://www.idiap.ch/en/scientific-research/biometrics-security-and-privacy">Biometrics Security and Privacy Group</a>, the
-<a class="reference external" href="http://www.idiap.ch/en/scientific-research/biosignal-processing">Biosignal Processing Group</a>, and the <a class="reference external" href="https://www.idiap.ch/en/people/development-engineers-group">Research and Development
-Engineers Group</a> at the <a class="reference external" href="https://www.idiap.ch">Idiap Research Institute</a>, in Switzerland.
-Bob is primarily developed through <a class="reference external" href="https://gitlab.idiap.ch/bob">GitLab</a>.</p>
+    <div class="figure align-center" style="width: 100%">
+<img alt="Overview on the multi-task method dealing with segmentation tasks of the eye fundus elements" src="../../images/covers/driss-khalil.png" style="width: 90%;" />
+<p class="caption">Overview on the multi-task method dealing with segmentation tasks of the eye
+fundus elements.</p>
 </div>
-        <br>
-        <a class="btn"
-           href="../software/bob/">
-          Continue reading
-        </a>
+<p>The human eye remains one of the essential organs in the human body; it can be
+affected by several diseases that can cause irreversible blindness. These
+diseases can appear without any visual symptoms; a late diagnosis would cause
+the loss of sight and cause blindness. This project's global goal is to detect
+those diseases using two-dimensional eye fundus images. Nevertheless, in all
+healthcare-related projects, interpretability is an essential element to care
+about. Detecting the eye elements is one of the ways to improve the
+interpretability, as the healthcare specialist will have an overview of how the
+model did classify the diseases.</p>
+<p>In our work, we studied a new multi-task approach that could detect all the eye
+elements and classify the diseases using one model. As we wanted to explore
+more views on this approach, we focused in this project on segmenting two
+essential elements of the eye fundus, the vessels, and the optic disc, as they
+are the elements that are affected mainly by the diseases.</p>
+<p>To address this, we disposed of several public datasets for each task. Firstly,
+we generated some baseline results using single-task approach models. Secondly,
+we analyzed the results provided by each model, and we decided to choose U-Net
+as the model we want to work within our Multi-task learning approach. All the
+datasets in our work were annotated on one specific task, making us look for a
+method that can work with disjoint datasets. The chosen method was based on
+alternating the training between the tasks at each epoch. We generated a ground
+truth for the non-annotated task using the predictor of the previous epoch. We
+tested the model on new datasets with different image quality for each
+experiment, allowing us to test our model's generalization. The chosen
+experiments were based on evaluating the model's performance using multiple
+images from different datasets and assessing the effect of having an imbalance
+of the images between the tasks. The metric used to compare the results was the
+F1-score.</p>
+<p>From the baseline method, we remarked two problems: the enormous noise in the
+training and validation losses and the non-convergence compared to the
+single-task approach. Two methods were proposed to face those problems. The
+first one consisted of using gradient accumulation to update the model's weight
+once at each epoch. The second method was to generate the ground truth of the
+non-annotated task using the best epoch predictor.</p>
+<p>The results have shown that the gradient accumulation approach decreased the
+noise from the losses. Still, the method based on the generation of the ground
+truth from the best epoch failed to help the model converge and caused even a
+higher loss than the baseline method.</p>
+<p><span class="fa fa-file-pdf-o"></span> <a class="reference external" href="https://publidiap.idiap.ch/attachments/internals/2022/Khalil_Idiap-Internal-RR-58-2022.pdf">Access the full thesis text from this link</a>.</p>
+<p><span class="fa fa-brands fa-python"></span> <a class="reference external" href="https://gitlab.idiap.ch/bob/bob.ip.binseg/-/tree/mtl_changes">Access to Python source code</a> (git repository).</p>
+<!-- Place your references here -->
+
   </div>
-  <hr />
-</article>
-<article>
-  <img class="cover" src="/images/logos/beat.png" alt="">
-  <header>
-    <h2><a href="../software/beat/">The BEAT Platform</a></h2>
+  <div class="tag-cloud">
     <p>
-      Posted on Wed 16 March 2016 in <a href="../software/">software</a>
-
-
     </p>
-  </header>
-  <div>
-      <div><p class="first last">The <a class="reference external" href="https://www.idiap.ch/software/beat/platform/">BEAT platform</a> is a European computing e-infrastructure for
-<a class="reference external" href="https://en.wikipedia.org/wiki/Open_science">Open Science</a> proposing a solution for open access, scientific
-information sharing and re-use including data and source code while
-protecting privacy and confidentiality.</p>
-</div>
-        <br>
-        <a class="btn"
-           href="../software/beat/">
-          Continue reading
-        </a>
   </div>
+
+
+
+
+
+
 </article>
-
-
-
 
 <footer>
 <p>&copy; André Anjos 2023</p>
@@ -260,7 +285,7 @@ protecting privacy and confidentiality.</p>
   "@context" : "http://schema.org",
   "@type" : "Blog",
   "name": " André Anjos ",
-  "url" : "..",
+  "url" : "../..",
   "image": "/images/profile_128.png",
   "description": "Professional Website"
 }
