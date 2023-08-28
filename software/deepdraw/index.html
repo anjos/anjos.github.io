@@ -69,23 +69,23 @@
 
 
 <meta name="author" content="André Anjos" />
-<meta name="description" content="The goal of this study is to identify whether it is possible to predict the occurrence of adverse events in patients based on their clinical data." />
+<meta name="description" content="Deepdraw is semantic segmentation library for medical imaging based on PyTorch." />
 <meta name="keywords" content="">
 
 
   <meta property="og:site_name" content="André Anjos"/>
-  <meta property="og:title" content="Colombine Verzat: Machine Learning for Adverse Event Detection in Latent Tuberculosis Infection Treatment"/>
-  <meta property="og:description" content="The goal of this study is to identify whether it is possible to predict the occurrence of adverse events in patients based on their clinical data."/>
+  <meta property="og:title" content="Deepdraw: Semantic segmentation library for medical imaging"/>
+  <meta property="og:description" content="Deepdraw is semantic segmentation library for medical imaging based on PyTorch."/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:url" content="../../theses/colombine-verzat/"/>
+  <meta property="og:url" content="../../software/deepdraw/"/>
   <meta property="og:type" content="article"/>
-  <meta property="article:published_time" content="2020-07-15 10:00:00+02:00"/>
+  <meta property="article:published_time" content="2023-01-01 15:30:00+01:00"/>
   <meta property="article:modified_time" content=""/>
   <meta property="article:author" content="../../author/andre-anjos.html">
-  <meta property="article:section" content="theses"/>
-  <meta property="og:image" content="../../images/covers/thesis-colombine-verzat.png">
+  <meta property="article:section" content="software"/>
+  <meta property="og:image" content="../../images/logos/biosignal-black.png">
 
-  <title>André Anjos &ndash; Colombine Verzat: Machine Learning for Adverse Event Detection in Latent Tuberculosis Infection Treatment</title>
+  <title>André Anjos &ndash; Deepdraw: Semantic segmentation library for medical imaging</title>
 
 
 </head>
@@ -189,56 +189,53 @@
 <article class="single">
   <header>
       
-    <h1 id="colombine-verzat">Colombine Verzat: Machine Learning for Adverse Event Detection in Latent Tuberculosis Infection Treatment</h1>
+    <h1 id="deepdraw">Deepdraw: Semantic segmentation library for medical imaging</h1>
     <p>
-      Posted on Wed 15 July 2020 in <a href="../../theses/">theses</a>
+      Posted on Sun 01 January 2023 in <a href="../../software/">software</a>
 
     </p>
   </header>
 
 
   <div>
-    <div class="figure align-center" style="width: 100%">
-<img alt="Illustrative comparison between active and latent TB" src="../../images/covers/thesis-colombine-verzat.png" style="width: 90%;" />
-<p class="caption">Comparison between active and latent TB. Adapted from
-<a class="reference external" href="http://www.bccdc.ca/about/news-stories/stories/its-time-to-end-tb">http://www.bccdc.ca/about/news-stories/stories/its-time-to-end-tb</a>. Both
-latent and active TB show positive TB skin test but only active TB displays
-abnormal chest X-Ray. Latent TB is not infectious and the patients show no
-symptom since the bacterium is dormant in the lungs. On the other hand,
-patients with active TB can contaminate others and show symptoms.</p>
+    <p><a class="reference external" href="https://gitlab.idiap.ch/biosignal/software/deepdraw">Deepdraw</a> is an open-source software package to train and evaluate a range of
+neural network architectures for semantic <a class="reference external" href="https://en.wikipedia.org/wiki/Image_segmentation">image segmentation</a> tasks. It is
+built using <a class="reference external" href="https://pytorch.org">PyTorch</a>.  It used to be called <tt class="docutils literal">bob.ip.binseg</tt> when it was part
+of the Signal Processing and Machine Learning Library <a class="reference external" href="../../software/bob/">bob</a>.</p>
+<div class="figure align-center" style="width: 100%">
+<img alt="Example 1: semantic segmentation output, where the model was trained to delineate vessels on a color fundus image (ophthalmological data)." src="../../images/pictures/fundus-image-segmented.jpg" style="width: 90%;" />
+<p class="caption">Example 1: Semantic segmentation output of <a class="reference external" href="https://gitlab.idiap.ch/biosignal/software/deepdraw">deepdraw</a>, where a
+fully-convolutional model was trained to delineate vessels on a color fundus
+image (ophthalmological data).</p>
 </div>
-<p>One quarter of the world’s population has latent tuberculosis infection (LTBI).
-In this form of the disease, the bacteria has a 10 to 15% chance to start
-replicating and cause the patient to develop active tuberculosis. In those
-cases, preventive therapy is thus essential to limit the spread of the disease.
-Unfortunately, the treatment for LTBI can cause severe adverse events which
-discourages patients. Predicting which patients are most at risk of developing
-adverse events could thus improve treatment efficacy and help achieving WHO
-goals of TB elimination by 2050.</p>
-<p>The goal of this study is to identify whether it is possible to predict the
-occurrence of adverse events in patients based on their clinical data.</p>
-<p>To address this, we disposed of a clinical dataset of 6485 patients who had
-LTBI and went through treatment. A small part of these patients developed
-adverse events associated to the treatment. First, we reproduced <a class="reference external" href="https://doi.org/10.1016/s1473-3099(19)30575-4">a study by
-Campbell et al.</a> performed on this dataset using a logistic regression
-model. We then investigated the predictive power of this model using
-generalization and established a baseline from the resulting model. Finally, we
-explored how non-linear machine learning models could improve the performance
-compared to the baseline.</p>
-<p>We found that multivariate logistic regression yielded a classifier with the
-following performance: AUC= 0.65 ± 0.04. Although non-linear techniques matched
-the baseline performance, they failed to significantly improve the prediction
-further.</p>
-<p>These findings suggest that part of the data is linearly separable, while some
-isolated points in the dataset cannot be easily generalized. Patients with and
-without adverse events seem to overlap in the variable space, which suggests
-that an efficient detection of adverse events is difficult to achieve with this
-dataset. The improvement of the model may require a larger and less imbalanced
-dataset, possibly along further explanatory variables permitting a better
-characterization of the patient.</p>
+<div class="admonition information">
+<p class="first admonition-title"><span class="fa fa-solid fa-book"></span> Associated Publications</p>
+<p>If you use this work, cite at least use the BibTeX references below:</p>
+<div class="last"><div class="highlight"><pre><span></span><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">renzo-2021</span><span class="p">,</span>
+<span class="w">    </span><span class="na">title</span><span class="w">     </span><span class="p">=</span><span class="w"> </span><span class="s">{Development of a lung segmentation algorithm for analog imaged chest X-Ray: preliminary results}</span><span class="p">,</span>
+<span class="w">    </span><span class="na">author</span><span class="w">    </span><span class="p">=</span><span class="w"> </span><span class="s">{Matheus A. Renzo and Nat\&#39;{a}lia Fernandez and Andr\&#39;e Baceti and Natanael Nunes de Moura Junior and Andr\&#39;e Anjos}</span><span class="p">,</span>
+<span class="w">    </span><span class="na">month</span><span class="w">     </span><span class="p">=</span><span class="w"> </span><span class="s">{10}</span><span class="p">,</span>
+<span class="w">    </span><span class="na">booktitle</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{XV Brazilian Congress on Computational Intelligence}</span><span class="p">,</span>
+<span class="w">    </span><span class="na">year</span><span class="w">      </span><span class="p">=</span><span class="w"> </span><span class="s">{2021}</span><span class="p">,</span>
+<span class="w">    </span><span class="na">doi</span><span class="w">       </span><span class="p">=</span><span class="w"> </span><span class="s">{10.21528/CBIC2021-123}</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="nc">@misc</span><span class="p">{</span><span class="nl">laibacher-2019</span><span class="p">,</span>
+<span class="w">    </span><span class="na">title</span><span class="w">         </span><span class="p">=</span><span class="w"> </span><span class="s">{On the Evaluation and Real-World Usage Scenarios of Deep Vessel Segmentation for Retinography}</span><span class="p">,</span>
+<span class="w">    </span><span class="na">author</span><span class="w">        </span><span class="p">=</span><span class="w"> </span><span class="s">{Tim Laibacher and Andr\&#39;e Anjos}</span><span class="p">,</span>
+<span class="w">    </span><span class="na">year</span><span class="w">          </span><span class="p">=</span><span class="w"> </span><span class="s">{2019}</span><span class="p">,</span>
+<span class="w">    </span><span class="na">eprint</span><span class="w">        </span><span class="p">=</span><span class="w"> </span><span class="s">{1909.03856}</span><span class="p">,</span>
+<span class="w">    </span><span class="na">archivePrefix</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{arXiv}</span><span class="p">,</span>
+<span class="w">    </span><span class="na">primaryClass</span><span class="w">  </span><span class="p">=</span><span class="w"> </span><span class="s">{cs.CV}</span><span class="p">,</span>
+<span class="w">    </span><span class="na">url</span><span class="w">           </span><span class="p">=</span><span class="w"> </span><span class="s">{https://arxiv.org/abs/1909.03856}</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div></div>
 <div class="admonition note">
-<p class="first admonition-title">Available Materials</p>
-<p class="last"><span class="fa fa-file-pdf"></span> <a class="reference external" href="http://publications.idiap.ch/attachments/reports/2020/Verzat_Idiap-Com-02-2020.pdf">Thesis report</a></p>
+<p class="first admonition-title">Links</p>
+<p><span class="fa fa-brands fa-gitlab"></span> <a class="reference external" href="https://gitlab.idiap.ch/biosignal/software/deepdraw">GitLab project page</a></p>
+<p><span class="fa fa-solid fa-book"></span> <a class="reference external" href="https://www.idiap.ch/software/biosignal/docs/biosignal/software/deepdraw/master/sphinx/">Documentation</a></p>
+<p class="last"><span class="fa fa-brands fa-python"></span> Installable Python package <a class="reference external" href="https://pypi.org/project/bob.ip.binseg/">PyPI</a></p>
 </div>
 <!-- Place your references here -->
 
