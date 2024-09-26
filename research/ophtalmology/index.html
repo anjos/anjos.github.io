@@ -260,16 +260,15 @@ comprehensive cross-dataset performance analysis to date, highlighting the limit
 of existing approaches and the potential for domain adaptation techniques. Overall, this
 work showcases efficient and effective solutions for retinal vessel segmentation tasks
 that align with current state-of-the-art results while reducing model complexity.</p>
-<p><strong>Demographic Fairness</strong>: In <a href='#miccai-2024' id='ref-miccai-2024-1'>(QueirozNeto et al., 2024)</a> we tackled the challenge of ensuring
-consistent performance and fairness in machine learning models for medical image
-diagnostics, with a focus on chest X-ray images. We proposed using Foundation Models as
-an embedding extractor to create groups representing protected attributes, such as
-gender and age. This approach can effectively group individuals by gender in both in-
-and out-of-distribution scenarios, reducing bias by up to 6.2%. However, the model's
-robustness in handling age attributes is limited, highlighting a need for more
-fundamentally fair and robust Foundation models. These findings contribute to the
-development of more equitable medical diagnostics, particularly where protected
-attribute information is lacking.</p>
+<p><strong>Demographic Fairness</strong>: Our study in <a href='#eccv-2024' id='ref-eccv-2024-1'>(QueirozNeto et al., 2024)</a> investigates the fairness and bias
+of Foundation models when applied to medical imaging datasets. By fine-tuning a
+Foundation model on the Brazilian Multilabel Ophthalmological Dataset (BRSET),
+researchers found that it had potential to reduce disparities in accuracy between
+different gender and age groups, compared to traditional supervised learning. However,
+as data availability decreased, the model's bias actually increased, suggesting that
+fairness issues may arise when deploying such models in real-world settings with limited
+data. These findings highlight the need to consider bias and fairness implications when
+using Foundation models in practical applications.</p>
 <hr>
 <h2>Bibliography</h2>
 <p id='cbms-2023'>Victor Amiot, Oscar Jimenez-del-Toro, Pauline Eyraud, Yan Guex-Crosier, Ciara Bergin, André Anjos, Florence Hoogewoud, and Mattia Tomasoni.
@@ -289,9 +288,9 @@ URL: <a href="https://www.nature.com/articles/s41598-022-09675-y">https://www.na
 Absolute retinal blood flow in healthy eyes and in eyes with retinal vein occlusion.
 <em>Microvascular Research</em>, 1 2024.
 <a href="https://doi.org/10.1016/j.mvr.2023.104648">doi:10.1016/j.mvr.2023.104648</a>. <a class="cite-backref" href="#ref-mvr-2024-1" title="Jump back to reference 1">↩</a></p>
-<p id='miccai-2024'>Dilermando Queiroz&nbsp;Neto, Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos, and Lilian Berton.
-Using backbone foundation model for evaluating fairness in chest radiography without demographic data.
-In <em>Proceedings of the International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI)</em>. October 2024. <a class="cite-backref" href="#ref-miccai-2024-1" title="Jump back to reference 1">↩</a></p>
+<p id='eccv-2024'>Dilermando Queiroz&nbsp;Neto, Anderson Carlos, Ma<span class="bibtex-protected">\'<span class="bibtex-protected">ı</span></span>ra Fatoretto, Luis&nbsp;Filipe Nakayama, Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos, and Lilian Berton.
+Does data-efficient generalization exacerbate bias in foundation models?
+In <em>Proceedings of the 18th European Conference on Computer Vision (ECCV)</em>. October 2024. <a class="cite-backref" href="#ref-eccv-2024-1" title="Jump back to reference 1">↩</a></p>
 
   </div>
   <div class="tag-cloud">
