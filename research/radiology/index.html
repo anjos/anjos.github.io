@@ -175,7 +175,7 @@
       </li>
       <li>
         <a class="sc-gitlab"
-           href="https://gitlab.idiap.ch/biosignal/software"
+           href="https://gitlab.idiap.ch/medai/software"
            target="_blank">
 <i class="fa-brands fa-gitlab"></i>        </a>
       </li>
@@ -223,7 +223,7 @@ Federal University of Rio de Janeiro</li>
 <li>Dr. Eugenio Canes and André Baceti, Murabei Data Science, Brazil</li>
 </ul>
 </div>
-<p><strong>Radiomics</strong>: In <a href='#euvip-2024-2' id='ref-euvip-2024-2-1'>(JimenezdelToro et al., 2024)</a> We've developed an evaluation framework for
+<p><strong>Radiomics</strong>: In <a title="click to jump to reference [1]"href="#pybtex-euvip-2024-2">[1]</a> We've developed an evaluation framework for
 extracting 3D deep radiomics features using pre-trained neural networks on real computed
 tomography (CT) scans, allowing comprehensive quantification of tissue characteristics.
 We compared these new features with standard hand-crafted radiomic features,
@@ -233,12 +233,12 @@ features. Notably, even when trained on an external dataset and task, our generi
 radiomics showed excellent stability and discriminative power for tissue
 characterization between different classes of liver lesions and normal tissue, with an
 average accuracy of 93.5%.</p>
-<p><strong>Chest X-ray CAD for Tuberculosis</strong>: In <a href='#ijtld-2023' id='ref-ijtld-2023-1'>(Geric et al., 2023)</a>, We conducted a review of
+<p><strong>Chest X-ray CAD for Tuberculosis</strong>: In <a title="click to jump to reference [2]"href="#pybtex-ijtld-2023">[2]</a>, We conducted a review of
 computer-aided detection (CAD) software for TB detection, highlighting its potential as
 a valuable tool but also several implementation challenges. Our assessment emphasizes
 the need for further research to address issues related to diagnostic heterogeneity,
 regulatory frameworks, and technology adaptation to meet the needs of high-burden
-settings and vulnerable populations. In <a href='#union-2022' id='ref-union-2022-1'>(Raposo et al., 2022)</a> we proposed an new approach to
+settings and vulnerable populations. In <a title="click to jump to reference [3]"href="#pybtex-union-2022">[3]</a> we proposed an new approach to
 develop more generalizable computer-aided detection (CAD) systems for pulmonary
 tuberculosis (PT) screening from Chest X-Ray images. Our method used radiological signs
 as intermediary proxies to detect PT, rather than relying on direct image-to-probability
@@ -247,16 +247,16 @@ developed a multi-class deep learning model that maps images to 14 key radiologi
 signs, followed by a second model that predicts PT diagnosis from these signs. Our
 approach demonstrated superior generalization capabilities compared to traditional CAD
 models, achieving higher area under the specificity vs. sensitivity curve (AUC) values
-on cross-dataset evaluation scenarios. Building on this, in <a href='#euvip-2024-1' id='ref-euvip-2024-1-1'>(Guler et al., 2024)</a> we
+on cross-dataset evaluation scenarios. Building on this, in <a title="click to jump to reference [4]"href="#pybtex-euvip-2024-1">[4]</a> we
 developed reliable techniques to train deep learning models for PT detection. By
 pre-training a neural network on a proxy task and using a technique called Mixed
 Objective Optimization Network (MOON) to balance classes during training, we demonstrate
 that our approach can improve alignment with human experts' decision-making processes
 while maintaining perfect classification accuracy. Notably, this method also enhances
 generalization on unseen datasets, making it more suitable for real-world applications.
-We made <a class="reference external" href="https://biosignal.pages.idiap.ch/software/paper/euvip24-refine-cad-tb/">our source code publicly available</a> online for reproducibility
+We made <a class="reference external" href="https://medai.pages.idiap.ch/software/paper/euvip24-refine-cad-tb/">our source code publicly available</a> online for reproducibility
 purposes.</p>
-<p><strong>Semanatic Segmentation</strong>: In <a href='#cbic-2021' id='ref-cbic-2021-1'>(Renzo et al., 2021)</a> we investigated the impact of digitization
+<p><strong>Semanatic Segmentation</strong>: In <a title="click to jump to reference [5]"href="#pybtex-cbic-2021">[5]</a> we investigated the impact of digitization
 on X-Ray images and their effect on deep neural networks trained for lung segmentation,
 highlighting the need to adapt these models to accurately analyze digitized data. Our
 results show that while our model performs exceptionally well (AUPRC: 0.99) at
@@ -265,7 +265,7 @@ identifying lung regions in digital X-Rays, its performance drops significantly 
 metrics, such as maximum F1 score and area under the precision-recall curve (AUPRC), may
 not be sufficient to characterize segmentation problems in test images, particularly due
 to the natural connectivity of lungs in X-Ray images.</p>
-<p><strong>Demographic Fairness</strong>: In <a href='#miccai-2024' id='ref-miccai-2024-1'>(QueirozNeto et al., 2024)</a> we tackled the challenge of ensuring
+<p><strong>Demographic Fairness</strong>: In <a title="click to jump to reference [6]"href="#pybtex-miccai-2024">[6]</a> we tackled the challenge of ensuring
 consistent performance and fairness in machine learning models for medical image
 diagnostics, with a focus on chest X-ray images. We proposed using Foundation Models as
 an embedding extractor to create groups representing protected attributes, such as
@@ -276,28 +276,136 @@ fundamentally fair and robust Foundation models. These findings contribute to th
 development of more equitable medical diagnostics, particularly where protected
 attribute information is lacking.</p>
 <!-- links here: -->
-<hr>
+<!--
+SPDX-FileCopyrightText: Copyright © 2024 André Anjos <andre.dos.anjos@gmail.com>
+SPDX-License-Identifier: MIT
+-->
 <h2>Bibliography</h2>
-<p id='ijtld-2023'>C.&nbsp;Geric, Z.&nbsp;Z. Qin, C.&nbsp;M. Denkinger, S.&nbsp;V. Kik, B.&nbsp;Marais, André Anjos, P.-M. David, F.&nbsp;A. Khan, and A.&nbsp;Trajman.
-The rise of artificial intelligence reading of chest x-rays for enhanced tb diagnosis and elimination.
-<em>INT J TUBERC LUNG DIS</em>, 5 2023.
-<a href="https://doi.org/10.5588/ijtld.22.0687">doi:10.5588/ijtld.22.0687</a>. <a class="cite-backref" href="#ref-ijtld-2023-1" title="Jump back to reference 1">↩</a></p>
-<p id='euvip-2024-1'><span class="bibtex-protected"><span class="bibtex-protected">Ö</span></span>zg<span class="bibtex-protected"><span class="bibtex-protected">ü</span></span>r G<span class="bibtex-protected"><span class="bibtex-protected">ü</span></span>ler, Manuel G<span class="bibtex-protected"><span class="bibtex-protected">ü</span></span>nther, and Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos.
-Refining tuberculosis detection in cxr imaging: addressing bias in deep neural networks via interpretability.
-In <em>Proceedings of the 12th European Workshop on Visual Information Processing</em>. September 2024. <a class="cite-backref" href="#ref-euvip-2024-1-1" title="Jump back to reference 1">↩</a></p>
-<p id='euvip-2024-2'>Oscar Jimenez-del-Toro, Christoph Aberle, Roger Schaer, Michael Bach, Kyriakos Flouris, Ender Konukoglu, Bram Stieltjes, Markus&nbsp;M. Obmann, Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos, Henning M<span class="bibtex-protected"><span class="bibtex-protected">ü</span></span>ller, and Adrien Depeursinge.
+
+
+
+
+
+<div id="pybtex">
+    
+    <details id="pybtex-euvip-2024-2">
+        <summary>[1] Oscar Jimenez-del-Toro, Christoph Aberle, Roger Schaer, Michael Bach, Kyriakos Flouris, Ender Konukoglu, Bram Stieltjes, Markus&nbsp;M. Obmann, Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos, Henning M<span class="bibtex-protected"><span class="bibtex-protected">ü</span></span>ller, and Adrien Depeursinge.
 Comparing stability and discriminatory power of hand-crafted versus deep radiomics: a 3d-printed anthropomorphic phantom study.
-In <em>Proceedings of the 12th European Workshop on Visual Information Processing</em>. September 2024. <a class="cite-backref" href="#ref-euvip-2024-2-1" title="Jump back to reference 1">↩</a></p>
-<p id='miccai-2024'>Dilermando Queiroz&nbsp;Neto, Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos, and Lilian Berton.
-Using backbone foundation model for evaluating fairness in chest radiography without demographic data.
-In <em>Proceedings of the International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI)</em>. October 2024. <a class="cite-backref" href="#ref-miccai-2024-1" title="Jump back to reference 1">↩</a></p>
-<p id='union-2022'>Geoffrey Raposo, Anete Trajman, and Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos.
+In <em>Proceedings of the 12th European Workshop on Visual Information Processing</em>. September 2024.</summary>
+        <div class="highlight"><pre><span></span><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">euvip-2024-2</span><span class="p">,</span>
+<span class="w">    </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Jimenez-del-Toro, Oscar and Aberle, Christoph and Schaer, Roger and Bach, Michael and Flouris, Kyriakos and Konukoglu, Ender and Stieltjes, Bram and Obmann, Markus M. and Anjos, Andr{\&#39;{e}} and M{\&quot;{u}}ller, Henning and Depeursinge, Adrien}</span><span class="p">,</span>
+<span class="w">    </span><span class="na">month</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;September&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Comparing Stability and Discriminatory Power of Hand-crafted Versus Deep Radiomics: A 3D-Printed Anthropomorphic Phantom Study&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">booktitle</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Proceedings of the 12th European Workshop on Visual Information Processing&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;2024&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">abstract</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Radiomics have the ability to comprehensively quantify human tissue characteristics in medical imaging studies. However, standard radiomic features are highly unstable due to their sensitivity to scanner and reconstruction settings. We present an evaluation framework for the extraction of 3D deep radiomics features using a pre-trained neural network on real computed tomography (CT) scans for tissue characterization. We compare both the stability and discriminative power of the proposed 3D deep learning radiomic features versus standard hand-crafted radiomic features using 8 image acquisition protocols with a 3D-printed anthropomorphic phantom containing 4 classes of liver lesions and normal tissue. Even when the deep learning model was trained on an external dataset and for a different tissue characterization task, the resulting generic deep radiomics are at least twice more stable on 8 CT parameter variations than any category of hand-crafted features. Moreover, the 3D deep radiomics were also discriminative for the tissue characterization between 4 classes of liver tissue and lesions, with an average discriminative power of 93.5\\%.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">pdf</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;https://publications.idiap.ch/attachments/papers/2024/Jimenez-del-Toro\_EUVIP2024\_2024.pdf&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </details>
+    
+    <details id="pybtex-ijtld-2023">
+        <summary>[2] C.&nbsp;Geric, Z.&nbsp;Z. Qin, C.&nbsp;M. Denkinger, S.&nbsp;V. Kik, B.&nbsp;Marais, André Anjos, P.-M. David, F.&nbsp;A. Khan, and A.&nbsp;Trajman.
+The rise of artificial intelligence reading of chest x-rays for enhanced tb diagnosis and elimination.
+<em>INT J TUBERC LUNG DIS</em>, May 2023.
+<a href="https://doi.org/10.5588/ijtld.22.0687">doi:10.5588/ijtld.22.0687</a>.</summary>
+        <div class="highlight"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">ijtld-2023</span><span class="p">,</span>
+<span class="w">    </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Geric, C. and Qin, Z. Z. and Denkinger, C. M. and Kik, S. V. and Marais, B. and Anjos, André and David, P.-M. and Khan, F. A. and Trajman, A.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;The rise of artificial intelligence reading of chest X-rays for enhanced TB diagnosis and elimination&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">doi</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;10.5588/ijtld.22.0687&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">abstract</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;We provide an overview of the latest evidence on computer-aided detection (CAD) software for automated interpretation of chest radiographs (CXRs) for TB detection. CAD is a useful tool that can assist in rapid and consistent CXR interpretation for TB. CAD can achieve high sensitivity TB detection among people seeking care with symptoms of TB and in population-based screening, has accuracy on-par with human readers. However, implementation challenges remain. Due to diagnostic heterogeneity between settings and sub-populations, users need to select threshold scores rather than use pre-specified ones, but some sites may lack the resources and data to do so. Efficient standardisation is further complicated by frequent updates and new CAD versions, which also challenges implementation and comparison. CAD has not been validated for TB diagnosis in children and its accuracy for identifying non-TB abnormalities remains to be evaluated. A number of economic and political issues also remain to be addressed through regulation for CAD to avoid furthering health inequities. Although CAD-based CXR analysis has proven remarkably accurate for TB detection in adults, the above issues need to be addressed to ensure that the technology meets the needs of high-burden settings and vulnerable sub-populations.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">journal</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;INT J TUBERC LUNG DIS&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">volume</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;27&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">journaltitle</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;International Journal of Tuberculosis and Lung Diseases&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;2023&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">month</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;May&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">keywords</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;computer-aided detection; chest radiology; pulmonary disease; tuberculosis; AI technology&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </details>
+    
+    <details id="pybtex-union-2022">
+        <summary>[3] Geoffrey Raposo, Anete Trajman, and Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos.
 Pulmonary tuberculosis screening from radiological signs on chest x-ray images using deep models.
-In <em>Union World Conference on Lung Health</em>. The Union, November 2022. <a class="cite-backref" href="#ref-union-2022-1" title="Jump back to reference 1">↩</a></p>
-<p id='cbic-2021'>Matheus&nbsp;A. Renzo, Natália Fernandez, André&nbsp;A. Baceti, Natanael&nbsp;Nunes Moura&nbsp;Junior, and André Anjos.
+In <em>Union World Conference on Lung Health</em>. The Union, November 2022.</summary>
+        <div class="highlight"><pre><span></span><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">union-2022</span><span class="p">,</span>
+<span class="w">    </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Raposo, Geoffrey and Trajman, Anete and Anjos, Andr{\&#39;{e}}&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">month</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;November&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Pulmonary Tuberculosis Screening from Radiological Signs on Chest X-Ray Images Using Deep Models&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">booktitle</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Union World Conference on Lung Health&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;2022&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">addendum</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;(Issued from master thesis supervision)&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">date</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;2022-11-01&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">organization</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;The Union&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">abstract</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Background: The World Health Organization has recently recommended the use of computer-aided detection (CAD) systems for screening pulmonary tuberculosis (PT) in Chest X-Ray images. Previous CAD models are based on direct image to probability detection techniques - and do not generalize well (from training to validation databases). We propose a method that overcomes these limitations by using radiological signs as intermediary proxies for PT detection. Design/Methods: We developed a multi-class deep learning model, mapping images to 14 radiological signs such as cavities, infiltration, nodules, and fibrosis, using the National Institute of Health (NIH) CXR14 dataset, which contains 112,120 images. Using three public PTB datasets (Montgomery County - MC, Shenzen - CH, and Indian - IN), summing up 955 images, we developed a second model mapping F probabilities to PTB diagnosis (binary labels). We evaluated this approach for its generalization capabilities against direct models, learnt directly from PTB training data or by transfer learning via cross-folding and cross-database experiments. The area under the specificity vs. sensitivity curve (AUC) considering all folds was used to summarize the performance of each approach. Results: The AUC for intra-dataset tests baseline direct detection deep models achieved 0.95 (MC), 0.95 (CH) and 0.91 (IN), with up to 35\\% performance drop on a cross-dataset evaluation scenario. Our proposed approach achieved AUC of 0.97 (MC), 0.90 (CH), and 0.93 (IN), with at most 11\\% performance drop on a cross-dataset evaluation (Table/figures). In most tests, the difference was less than 5\\%. Conclusions: A two-step CAD model based on radiological signs offers an adequate base for the development of PT screening systems and is more generalizable than a direct model. Unlike commercially available CADS, our model is completely reproducible and available open source at https://pypi.org/project/bob.med.tb/.&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </details>
+    
+    <details id="pybtex-euvip-2024-1">
+        <summary>[4] <span class="bibtex-protected"><span class="bibtex-protected">Ö</span></span>zg<span class="bibtex-protected"><span class="bibtex-protected">ü</span></span>r G<span class="bibtex-protected"><span class="bibtex-protected">ü</span></span>ler, Manuel G<span class="bibtex-protected"><span class="bibtex-protected">ü</span></span>nther, and Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos.
+Refining tuberculosis detection in cxr imaging: addressing bias in deep neural networks via interpretability.
+In <em>Proceedings of the 12th European Workshop on Visual Information Processing</em>. September 2024.</summary>
+        <div class="highlight"><pre><span></span><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">euvip-2024-1</span><span class="p">,</span>
+<span class="w">    </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{G{\&quot;{u}}ler, {\&quot;{O}}zg{\&quot;{u}}r and G{\&quot;{u}}nther, Manuel and Anjos, Andr{\&#39;{e}}}</span><span class="p">,</span>
+<span class="w">    </span><span class="na">month</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;September&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Refining Tuberculosis Detection in CXR Imaging: Addressing Bias in Deep Neural Networks via Interpretability&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">booktitle</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Proceedings of the 12th European Workshop on Visual Information Processing&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;2024&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">abstract</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Automatic classification of active tuberculosis from chest X-ray images has the potential to save lives, especially in low- and mid-income countries where skilled human experts can be scarce. Given the lack of available labeled data to train such systems and the unbalanced nature of publicly available datasets, we argue that the reliability of deep learning models is limited, even if they can be shown to obtain perfect classification accuracy on the test data. One way of evaluating the reliability of such systems is to ensure that models use the same regions of input images for predictions as medical experts would. In this paper, we show that pre-training a deep neural network on a large-scale proxy task, as well as using mixed objective optimization network (MOON), a technique to balance different classes during pre-training and fine-tuning, can improve the alignment of decision foundations between models and experts, as compared to a model directly trained on the target dataset. At the same time, these approaches keep perfect classification accuracy according to the area under the receiver operating characteristic curve (AUROC) on the test set, and improve generalization on an independent, unseen dataset. For the purpose of reproducibility, our source code is made available online.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">pdf</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;https://publications.idiap.ch/attachments/papers/2024/Guler\_EUVIP24\_2024.pdf&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </details>
+    
+    <details id="pybtex-cbic-2021">
+        <summary>[5] Matheus&nbsp;A. Renzo, Natália Fernandez, André&nbsp;A. Baceti, Natanael&nbsp;Nunes Moura&nbsp;Junior, and André Anjos.
 Development of a lung segmentation algorithm for analog imaged chest x-ray: preliminary results.
 In <em>Anais do 15. Congresso Brasileiro de Inteligência Computacional</em>, 1–8. <span class="bibtex-protected">SBIC</span>, October 2021.
-URL: <a href="https://sbic.org.br/eventos/cbic_2021/cbic2021-123/">https://sbic.org.br/eventos/cbic_2021/cbic2021-123/</a>, <a href="https://doi.org/10.21528/CBIC2021-123">doi:10.21528/CBIC2021-123</a>. <a class="cite-backref" href="#ref-cbic-2021-1" title="Jump back to reference 1">↩</a></p>
+URL: <a href="https://sbic.org.br/eventos/cbic_2021/cbic2021-123/">https://sbic.org.br/eventos/cbic_2021/cbic2021-123/</a>, <a href="https://doi.org/10.21528/CBIC2021-123">doi:10.21528/CBIC2021-123</a>.</summary>
+        <div class="highlight"><pre><span></span><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">cbic-2021</span><span class="p">,</span>
+<span class="w">    </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Renzo, Matheus A. and Fernandez, Natália and Baceti, André A. and Moura Junior, Natanael Nunes and Anjos, André&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Development of a lung segmentation algorithm for analog imaged chest X-Ray: preliminary results&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">url</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;https://sbic.org.br/eventos/cbic\_2021/cbic2021-123/&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">pdf</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;https://www.idiap.ch/\textasciitilde aanjos/papers/cbic-2021.pdf&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">doi</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;10.21528/CBIC2021-123&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">shorttitle</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Development of a lung segmentation algorithm for analog imaged chest X-Ray&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">addendum</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;(Issued from internship supervision)&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">abstract</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Analog X-Ray radiography is still used in many underdeveloped regions around the world. To allow these populations to benefit from advances in automatic computer-aided detection (CAD) systems, X-Ray films must be digitized. Unfortunately, this procedure may introduce imaging artefacts, which may severely impair the performance of such systems. This work investigates the impact digitized images may cause to deep neural networks trained for lung (semantic) segmentation on digital x-ray samples. While three public datasets for lung segmentation evaluation exist for digital samples, none are available for digitized data. To this end, a U-Net-style architecture was trained on publicly available data, and used to predict lung segmentation on a newly annotated set of digitized images. Using typical performance metrics such as the area under the precision-recall curve (AUPRC), our results show that the model is capable to identify lung regions at digital X-Rays with a high intra-dataset (AUPRC: 0.99), and cross-dataset (AUPRC: 0.99) efficiency on unseen test data. When challenged against digitized data, the performance is substantially degraded (AUPRC: 0.90). Our analysis also suggests that typical performance markers, maximum F1 score and AUPRC, seems not to be informative to characterize segmentation problems in test images. For this goal pixels does not have independence due to natural connectivity of lungs in images, this implies that a lung pixel tends to be surrounded by other lung pixels. This work is reproducible. Source code, evaluation protocols and baseline results are available at: https://pypi.org/project/bob.ip.binseg/.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">eventtitle</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Congresso Brasileiro de Inteligência Computacional&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">pages</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;1--8&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">booktitle</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Anais do 15. Congresso Brasileiro de Inteligência Computacional&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;2021&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">month</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;October&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">publisher</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;{SBIC}&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </details>
+    
+    <details id="pybtex-miccai-2024">
+        <summary>[6] Dilermando Queiroz&nbsp;Neto, Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos, and Lilian Berton.
+Using backbone foundation model for evaluating fairness in chest radiography without demographic data.
+In <em>Proceedings of the International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI)</em>. October 2024.</summary>
+        <div class="highlight"><pre><span></span><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">miccai-2024</span><span class="p">,</span>
+<span class="w">    </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Queiroz Neto, Dilermando and Anjos, Andr{\&#39;{e}} and Berton, Lilian&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">keywords</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Fairness, Foundation Model, Medical Image&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">month</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;October&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Using Backbone Foundation Model for Evaluating Fairness in Chest Radiography Without Demographic Data&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">booktitle</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Proceedings of the International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI)&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;2024&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">abstract</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Ensuring consistent performance across diverse populations and incorporating fairness into machine learning models are crucial for advancing medical image diagnostics and promoting equitable healthcare. However, many databases do not provide protected attributes or contain unbalanced representations of demographic groups, complicating the evaluation of model performance across different demographics and the application of bias mitigation techniques that rely on these attributes. This study aims to investigate the effectiveness of using the backbone of Foundation Models as an embedding extractor for creating groups that represent protected attributes, such as gender and age. We propose utilizing these groups in different stages of bias mitigation, including pre-processing, in-processing, and evaluation. Using databases in and out-of-distribution scenarios, it is possible to identify that the method can create groups that represent gender in both databases and reduce in 4.44\\% the difference between the gender attribute in-distribution and 6.16\\% in out-of-distribution. However, the model lacks robustness in handling age attributes, underscoring the need for more fundamentally fair and robust Foundation models. These findings suggest a role in promoting fairness assessment in scenarios where we lack knowledge of attributes, contributing to the development of more equitable medical diagnostics.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">pdf</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;https://publications.idiap.ch/attachments/papers/2024/QueirozNeto\_CVPR\_2024.pdf&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </details>
+    
+</div>
 
   </div>
   <div class="tag-cloud">

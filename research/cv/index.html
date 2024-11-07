@@ -175,7 +175,7 @@
       </li>
       <li>
         <a class="sc-gitlab"
-           href="https://gitlab.idiap.ch/biosignal/software"
+           href="https://gitlab.idiap.ch/medai/software"
            target="_blank">
 <i class="fa-brands fa-gitlab"></i>        </a>
       </li>
@@ -215,13 +215,13 @@ discriminatively, trying to separate attacks from <em>bona fide</em> presentatio
 We showed this technique does not generalize well to unseen presentation
 attacks.  We explored, for the first time, alternate approaches by
 joint-modelling client identity as a way to calibrate PAD output scores
-<a href='#tifs-2015' id='ref-tifs-2015-1'>(Chingovska and Anjos, 2015)</a>, showing increased robustness to unseen attacks.  More
+<a title="click to jump to reference [1]"href="#pybtex-tifs-2015">[1]</a>, showing increased robustness to unseen attacks.  More
 recently, we also showed that solely modelling <em>bona fide</em> presentations is
-also an effective way to increased PAD robustness <a href='#icb-2018' id='ref-icb-2018-1'>(Nikisins et al., 2018)</a>.  Finally, we
+also an effective way to increased PAD robustness <a title="click to jump to reference [2]"href="#pybtex-icb-2018">[2]</a>.  Finally, we
 showed that by adding heterogenous inputs to PAD systems can improve their
-robustness <a href='#tifs-2019-2' id='ref-tifs-2019-2-1'>(George et al., 2019)</a> to achieve state-of-the-art performance, even to
+robustness <a title="click to jump to reference [3]"href="#pybtex-tifs-2019-2">[3]</a> to achieve state-of-the-art performance, even to
 unseen conditions during training.</li>
-<li>Domain Specific Units (Adaptation): In <a href='#tifs-2019' id='ref-tifs-2019-1'>(dFreitasPereira et al., 2019)</a>, we apply domain
+<li>Domain Specific Units (Adaptation): In <a title="click to jump to reference [4]"href="#pybtex-tifs-2019">[4]</a>, we apply domain
 adaptation via dedicated Domain-Specific Units (DSU), with an application to
 Heterogeneous Face Recognition.  In this class of problems, one wants to
 recognize an individual across different spectral data,  based on the
@@ -259,24 +259,103 @@ international peer-reviewed scientific journals (including articles at very
 high-impact factor journals) and in peer-reviewed conference papers totalling a
 few thousand citations.</p>
 <!-- links here: -->
-<hr>
+<!--
+SPDX-FileCopyrightText: Copyright © 2024 André Anjos <andre.dos.anjos@gmail.com>
+SPDX-License-Identifier: MIT
+-->
 <h2>Bibliography</h2>
-<p id='tifs-2015'>Ivana Chingovska and Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos.
+
+
+
+
+
+<div id="pybtex">
+    
+    <details id="pybtex-tifs-2015">
+        <summary>[1] Ivana Chingovska and Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos.
 On the use of client identity information for face anti-spoofing.
-<em>IEEE Transactions on Information Forensics and Security, Special Issue on Biometric Anti-spoofing</em>, 10(4):787–796, 2 2015.
-<a href="https://doi.org/10.1109/TIFS.2015.2400392">doi:10.1109/TIFS.2015.2400392</a>. <a class="cite-backref" href="#ref-tifs-2015-1" title="Jump back to reference 1">↩</a></p>
-<p id='tifs-2019'>Tiago de&nbsp;Freitas&nbsp;Pereira, André Anjos, and Sébastien Marcel.
-Heterogeneous face recognition using domain specific units.
-<em>IEEE Transactions on Information Forensics and Security</em>, 12 2019.
-URL: <a href="https://publications.idiap.ch/index.php/publications/show/3963">https://publications.idiap.ch/index.php/publications/show/3963</a>, <a href="https://doi.org/10.1109/TIFS.2018.2885284">doi:10.1109/TIFS.2018.2885284</a>. <a class="cite-backref" href="#ref-tifs-2019-1" title="Jump back to reference 1">↩</a></p>
-<p id='tifs-2019-2'>Anjith George, Zohreh Mostaani, David Geissenbuhler, Olegs Nikisins, Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos, and S<span class="bibtex-protected"><span class="bibtex-protected">é</span></span>bastien Marcel.
-Biometric face presentation attack detection with multi-channel convolutional neural network.
-<em>IEEE Transactions on Information Forensics and Security</em>, 5 2019.
-<a href="https://doi.org/10.1109/TIFS.2019.2916652">doi:10.1109/TIFS.2019.2916652</a>. <a class="cite-backref" href="#ref-tifs-2019-2-1" title="Jump back to reference 1">↩</a></p>
-<p id='icb-2018'>Olegs Nikisins, Amir Mohammadi, André Anjos, and Sébastien Marcel.
+<em>IEEE Transactions on Information Forensics and Security, Special Issue on Biometric Anti-spoofing</em>, 10(4):787–796, February 2015.
+<a href="https://doi.org/10.1109/TIFS.2015.2400392">doi:10.1109/TIFS.2015.2400392</a>.</summary>
+        <div class="highlight"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">tifs-2015</span><span class="p">,</span>
+<span class="w">    </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Chingovska, Ivana and Anjos, Andr{\&#39;{e}}&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">keywords</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Biometric Verification, Counter-Measures, Counter-Spoofing, Liveness Detection, Replay, Spoofing Attacks&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;On the use of client identity information for face anti-spoofing&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">journal</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;IEEE Transactions on Information Forensics and Security, Special Issue on Biometric Anti-spoofing&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">addendum</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;(Issued from Ph.D co-supervision)&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">volume</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;10&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">number</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;4&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">month</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;February&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;2015&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">pages</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;787--796&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">doi</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;10.1109/TIFS.2015.2400392&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">pdf</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;https://www.idiap.ch/\textasciitilde aanjos/papers/tifs-2015.pdf&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">abstract</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;With biometrics playing the role of a password which can not be replaced if stolen, the necessity of establishing counter-measures to biometric spoofing attacks has been recognized. Regardless of the biometric mode, the typical approach of anti-spoofing systems is to classify biometric evidence based on features discriminating between real accesses and spoofing attacks. For the first time, to the best of our knowledge, this paper studies the amount of client-specific information within these features and how it affects the performance of anti-spoofing systems. We make use of this information to build two client-specific anti-spoofing solutions, one relying on a generative and another one on a discriminative paradigm. The proposed methods, tested on a set of state-of-the-art anti-spoofing features for the face mode, outperform the client-independent approaches with up to 50\\% relative improvement and exhibit better generalization capabilities on unseen types of spoofing attacks.&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </details>
+    
+    <details id="pybtex-icb-2018">
+        <summary>[2] Olegs Nikisins, Amir Mohammadi, André Anjos, and Sébastien Marcel.
 On effectiveness of anomaly detection approaches against unseen presentation attacks in face anti-spoofing.
 In <em>The 11th IAPR International Conference on Biometrics (ICB 2018)</em>. February 2018.
-URL: <a href="https://publications.idiap.ch/index.php/publications/show/3793">https://publications.idiap.ch/index.php/publications/show/3793</a>, <a href="https://doi.org/10.1109/ICB2018.2018.00022">doi:10.1109/ICB2018.2018.00022</a>. <a class="cite-backref" href="#ref-icb-2018-1" title="Jump back to reference 1">↩</a></p>
+URL: <a href="https://publications.idiap.ch/index.php/publications/show/3793">https://publications.idiap.ch/index.php/publications/show/3793</a>, <a href="https://doi.org/10.1109/ICB2018.2018.00022">doi:10.1109/ICB2018.2018.00022</a>.</summary>
+        <div class="highlight"><pre><span></span><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">icb-2018</span><span class="p">,</span>
+<span class="w">    </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Nikisins, Olegs and Mohammadi, Amir and Anjos, André and Marcel, Sébastien&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">month</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;February&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;On Effectiveness of Anomaly Detection Approaches against Unseen Presentation Attacks in Face Anti-Spoofing&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">booktitle</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;The 11th IAPR International Conference on Biometrics (ICB 2018)&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;2018&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">url</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;https://publications.idiap.ch/index.php/publications/show/3793&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">pdf</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;https://www.idiap.ch/\textasciitilde aanjos/papers/icb-2018.pdf&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">doi</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;10.1109/ICB2018.2018.00022&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">abstract</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;While face recognition systems got a significant boost in terms of recognition performance in recent years, they are known to be vulnerable to presentation attacks. Up to date, most of the research in the field of face anti-spoofing or presentation attack detection was considered as a two-class classification task: features of bona-fide samples versus features coming from spoofing attempts. The main focus has been on boosting the anti-spoofing performance for databases with identical types of attacks across both training and evaluation subsets. However, in realistic applications the types of attacks are likely to be unknown, potentially occupying a broad space in the feature domain. Therefore, a failure to generalize on unseen types of attacks is one of the main potential challenges in existing anti-spoofing approaches. First, to demonstrate the generalization issues of two-class anti-spoofing systems we establish new evaluation protocols for existing publicly available databases. Second, to unite the data collection efforts of various institutions we introduce a challenging Aggregated database composed of 3 publicly available datasets: Replay-Attack, Replay-Mobile and MSU MFSD, reporting the performance on it. Third, considering existing limitations we propose a number of systems approaching a task of presentation attack detection as an anomaly detection, or a one-class classification problem, using only bona-fide features in the training stage. Using less training data, hence requiring less effort in the data collection, the introduced approach demonstrates a better generalization properties against previously unseen types of attacks on the proposed Aggregated database.&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </details>
+    
+    <details id="pybtex-tifs-2019-2">
+        <summary>[3] Anjith George, Zohreh Mostaani, David Geissenbuhler, Olegs Nikisins, Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos, and S<span class="bibtex-protected"><span class="bibtex-protected">é</span></span>bastien Marcel.
+Biometric face presentation attack detection with multi-channel convolutional neural network.
+<em>IEEE Transactions on Information Forensics and Security</em>, May 2019.
+<a href="https://doi.org/10.1109/TIFS.2019.2916652">doi:10.1109/TIFS.2019.2916652</a>.</summary>
+        <div class="highlight"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">tifs-2019-2</span><span class="p">,</span>
+<span class="w">    </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;George, Anjith and Mostaani, Zohreh and Geissenbuhler, David and Nikisins, Olegs and Anjos, Andr{\&#39;{e}} and Marcel, S{\&#39;{e}}bastien&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Biometric Face Presentation Attack Detection with Multi-Channel Convolutional Neural Network&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">journal</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;IEEE Transactions on Information Forensics and Security&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">month</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;May&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;2019&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">doi</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;10.1109/TIFS.2019.2916652&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">pdf</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;https://www.idiap.ch/\textasciitilde aanjos/papers/tifs-2019-2.pdf&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">abstract</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Face recognition is a mainstream biometric authentication method. However, vulnerability to presentation attacks (a.k.a spoofing) limits its usability in unsupervised applications. Even though there are many methods available for tackling presentation attacks (PA), most of them fail to detect sophisticated attacks such as silicone masks. As the quality of presentation attack instruments improves over time, achieving reliable PA detection with visual spectra alone remains very challenging. We argue that analysis in multiple channels might help to address this issue. In this context, we propose a multi-channel Convolutional Neural Network based approach for presentation attack detection (PAD). We also introduce the new Wide Multi-Channel presentation Attack (WMCA) database for face PAD which contains a wide variety of 2D and 3D presentation attacks for both impersonation and obfuscation attacks. Data from different channels such as color, depth, near-infrared and thermal are available to advance the research in face PAD. The proposed method was compared with feature-based approaches and found to outperform the baselines achieving an ACER of 0.3\\% on the introduced dataset. The database and the software to reproduce the results are made available publicly.&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </details>
+    
+    <details id="pybtex-tifs-2019">
+        <summary>[4] Tiago de&nbsp;Freitas&nbsp;Pereira, André Anjos, and Sébastien Marcel.
+Heterogeneous face recognition using domain specific units.
+<em>IEEE Transactions on Information Forensics and Security</em>, December 2019.
+URL: <a href="https://publications.idiap.ch/index.php/publications/show/3963">https://publications.idiap.ch/index.php/publications/show/3963</a>, <a href="https://doi.org/10.1109/TIFS.2018.2885284">doi:10.1109/TIFS.2018.2885284</a>.</summary>
+        <div class="highlight"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">tifs-2019</span><span class="p">,</span>
+<span class="w">    </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;de Freitas Pereira, Tiago and Anjos, André and Marcel, Sébastien&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">month</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;December&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Heterogeneous Face Recognition Using Domain Specific Units&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">journal</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;IEEE Transactions on Information Forensics and Security&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;2019&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">addendum</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;(Issued from Ph.D co-supervision)&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">doi</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;10.1109/TIFS.2018.2885284&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">url</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;https://publications.idiap.ch/index.php/publications/show/3963&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">pdf</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;https://www.idiap.ch/\textasciitilde aanjos/papers/ieee-tifs-2018.pdf&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">abstract</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;The task of Heterogeneous Face Recognition consists in matching face images that are sensed in different domains, such as sketches to photographs (visual spectra images), thermal images to photographs or near-infrared images to photographs. In this work we suggest that high level features of Deep Convolutional Neural Networks trained on visual spectra images are potentially domain independent and can be used to encode faces sensed in different image domains. A generic framework for Heterogeneous Face Recognition is proposed by adapting Deep Convolutional Neural Networks low level features in, so called, “Domain Specific Units”. The adaptation using Domain Specific Units allow the learning of shallow feature detectors specific for each new image domain. Furthermore, it handles its transformation to a generic face space shared between all image domains. Experiments carried out with four different face databases covering three different image domains show substantial improvements, in terms of recognition rate, surpassing the state-of-the-art for most of them. This work is made reproducible: all the source code, scores and trained models of this approach are made publicly available.&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </details>
+    
+</div>
 
   </div>
   <div class="tag-cloud">

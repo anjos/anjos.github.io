@@ -175,7 +175,7 @@
       </li>
       <li>
         <a class="sc-gitlab"
-           href="https://gitlab.idiap.ch/biosignal/software"
+           href="https://gitlab.idiap.ch/medai/software"
            target="_blank">
 <i class="fa-brands fa-gitlab"></i>        </a>
       </li>
@@ -227,10 +227,10 @@ Grenoble Alpes, France</li>
 </ul>
 </div>
 <p><strong>Uveitis</strong>: Our recent work have made significant strides in developing automated
-grading systems for retinal inflammation. In <a href='#cbms-2023' id='ref-cbms-2023-1'>(Amiot et al., 2023)</a>, we presented a novel
+grading systems for retinal inflammation. In <a title="click to jump to reference [1]"href="#pybtex-cbms-2023">[1]</a>, we presented a novel
 pipeline capable of fully automating the grading of retinal vasculitis from fundus
 angiographies, achieving a high area-under-the-curve (AUC) score of 0.81, comparable to
-state-of-the-art approaches. Building on this work, in <a href='#ssrn-2024' id='ref-ssrn-2024-1'>(Amiot et al., 2024)</a>, we developed an
+state-of-the-art approaches. Building on this work, in <a title="click to jump to reference [2]"href="#pybtex-ssrn-2024">[2]</a>, we developed an
 automatic Transformer-based grading system for multiple retinal inflammatory signs,
 utilizing a larger dataset of fluorescein angiography images. The model was trained on a
 dataset with 543 patients (1042 eyes, 40'987 images). The new approach demonstrated
@@ -238,7 +238,7 @@ excellent performance in detecting vascular leakage, capillary leakage, macular 
 and optic disc hyperfluorescence. These advancements have the potential to streamline
 clinical evaluations, improve diagnostic accuracy, and enable more efficient patient
 care for this class of diseases.</p>
-<p><strong>Retinal vein occlusions</strong>: In <a href='#mvr-2024' id='ref-mvr-2024-1'>(Mautuit et al., 2024)</a> I contributed to the developement of a
+<p><strong>Retinal vein occlusions</strong>: In <a title="click to jump to reference [3]"href="#pybtex-mvr-2024">[3]</a> I contributed to the developement of a
 novel non-invasive tool, named AO-LDV, which combines adaptive optics with laser Doppler
 velocimetry to measure retinal venous blood flow in humans. This device enables accurate
 measurements of absolute blood flow rates and red blood cell velocities across various
@@ -248,7 +248,7 @@ found to correlate significantly with retinal vessel diameter and maximal veloci
 study's findings are also accompanied by a thorough evaluation of two software suites
 for automated retinal vessel measurement, one of which (based on deep neural networks)
 demonstrated higher accuracy and wider measurements.</p>
-<p><strong>Semantic segmentation</strong>: Our study <a href='#nsr-2022' id='ref-nsr-2022-1'>(Galdran et al., 2022)</a> presents significant advancements in
+<p><strong>Semantic segmentation</strong>: Our study <a title="click to jump to reference [4]"href="#pybtex-nsr-2022">[4]</a> presents significant advancements in
 retinal vessel segmentation from color fundus images, challenging the notion that
 increasingly complex deep learning models are necessary for high performance. By
 revisiting fundamental techniques and carefully training a minimalistic U-Net
@@ -260,7 +260,7 @@ comprehensive cross-dataset performance analysis to date, highlighting the limit
 of existing approaches and the potential for domain adaptation techniques. Overall, this
 work showcases efficient and effective solutions for retinal vessel segmentation tasks
 that align with current state-of-the-art results while reducing model complexity.</p>
-<p><strong>Demographic Fairness</strong>: Our study in <a href='#eccv-2024' id='ref-eccv-2024-1'>(QueirozNeto et al., 2024)</a> investigates the fairness and bias
+<p><strong>Demographic Fairness</strong>: Our study in <a title="click to jump to reference [5]"href="#pybtex-eccv-2024">[5]</a> investigates the fairness and bias
 of Foundation models when applied to medical imaging datasets. By fine-tuning a
 Foundation model on the Brazilian Multilabel Ophthalmological Dataset (BRSET),
 researchers found that it had potential to reduce disparities in accuracy between
@@ -269,28 +269,129 @@ as data availability decreased, the model's bias actually increased, suggesting 
 fairness issues may arise when deploying such models in real-world settings with limited
 data. These findings highlight the need to consider bias and fairness implications when
 using Foundation models in practical applications.</p>
-<hr>
+<!--
+SPDX-FileCopyrightText: Copyright © 2024 André Anjos <andre.dos.anjos@gmail.com>
+SPDX-License-Identifier: MIT
+-->
 <h2>Bibliography</h2>
-<p id='cbms-2023'>Victor Amiot, Oscar Jimenez-del-Toro, Pauline Eyraud, Yan Guex-Crosier, Ciara Bergin, André Anjos, Florence Hoogewoud, and Mattia Tomasoni.
+
+
+
+
+
+<div id="pybtex">
+    
+    <details id="pybtex-cbms-2023">
+        <summary>[1] Victor Amiot, Oscar Jimenez-del-Toro, Pauline Eyraud, Yan Guex-Crosier, Ciara Bergin, André Anjos, Florence Hoogewoud, and Mattia Tomasoni.
 Fully automatic grading of retinal vasculitis on fluorescein angiography time-lapse from real-world data in clinical settings.
 In <em>2023 IEEE 36th International Symposium on Computer-Based Medical Systems (CBMS)</em>. June 2023.
-<a href="https://doi.org/10.1109/CBMS58004.2023.00301">doi:10.1109/CBMS58004.2023.00301</a>. <a class="cite-backref" href="#ref-cbms-2023-1" title="Jump back to reference 1">↩</a></p>
-<p id='ssrn-2024'>Victor Amiot, Oscar Jimenez-del-Toro, Yan Guex-Croisier, Muriel Ott, Teodora-Elena Bogaciu, Shalini Banerjee, Jeremy Howell, Christoph Amstutz, Christophe Chiquet, Ciara Bergin, Ilenia Meloni, Mattia Tomasoni, Florence Hoogewoud, and André Anjos.
+<a href="https://doi.org/10.1109/CBMS58004.2023.00301">doi:10.1109/CBMS58004.2023.00301</a>.</summary>
+        <div class="highlight"><pre><span></span><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">cbms-2023</span><span class="p">,</span>
+<span class="w">    </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Amiot, Victor and Jimenez-del-Toro, Oscar and Eyraud, Pauline and Guex-Crosier, Yan and Bergin, Ciara and Anjos, André and Hoogewoud, Florence and Tomasoni, Mattia&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Fully Automatic Grading of Retinal Vasculitis on Fluorescein Angiography Time-lapse from Real-world Data in Clinical Settings&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">booktitle</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;2023 IEEE 36th International Symposium on Computer-Based Medical Systems (CBMS)&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;2023&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">month</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;June&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">doi</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;10.1109/CBMS58004.2023.00301&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">abstract</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;The objective of this study is to showcase a pipeline able to perform fully automated grading of retinal inflammation based on a standardised, clinically-validated grading scale. The application of such scale has so far been hindered by the the amount of time required to (manually) apply it in clinical settings. Our dataset includes 3,205 fluorescein angiography images from 148 patients and 242 eyes from the uveitis department of Jules Gonin Eye Hospital. The data was automatically extracted from a medical device, in hospital settings. Images were graded by a medical expert. We focused specifically on one type of inflammation, namely retinal vasculitis. Our pipeline comprises both learning-based models (Pasa model with F1 score = 0.81, AUC = 0.86), and an intensity-based approach to serve as a baseline (F1 score = 0.57, AUC = 0.66). A recall of up to 0.833 computed in an independent test set is comparable to the scores obtained by available state-of-the-art approaches. Here we present the first fully automated pipeline for the grading of retinal vasculitis from raw medical images that is applicable to a real-world clinical data.&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </details>
+    
+    <details id="pybtex-ssrn-2024">
+        <summary>[2] Victor Amiot, Oscar Jimenez-del-Toro, Yan Guex-Croisier, Muriel Ott, Teodora-Elena Bogaciu, Shalini Banerjee, Jeremy Howell, Christoph Amstutz, Christophe Chiquet, Ciara Bergin, Ilenia Meloni, Mattia Tomasoni, Florence Hoogewoud, and André Anjos.
 Automatic transformer-based grading of multiple retinal inflammatory signs on fluorescein angiography.
 September 2024.
-URL: <a href="https://papers.ssrn.com/abstract=4960069">https://papers.ssrn.com/abstract=4960069</a>, <a href="https://doi.org/10.2139/ssrn.4960069">doi:10.2139/ssrn.4960069</a>. <a class="cite-backref" href="#ref-ssrn-2024-1" title="Jump back to reference 1">↩</a></p>
-<p id='nsr-2022'>Adrian Galdran, André Anjos, José Dolz, Hadi Chakor, Hervé Lombaert, and Ismail&nbsp;Ben Ayed.
-State-of-the-art retinal vessel segmentation with minimalistic models.
-<em>Nature Scientific Reports</em>, 12(1):6174, 4 2022.
-Number: 1 Publisher: Nature Publishing Group.
-URL: <a href="https://www.nature.com/articles/s41598-022-09675-y">https://www.nature.com/articles/s41598-022-09675-y</a>, <a href="https://doi.org/10.1038/s41598-022-09675-y">doi:10.1038/s41598-022-09675-y</a>. <a class="cite-backref" href="#ref-nsr-2022-1" title="Jump back to reference 1">↩</a></p>
-<p id='mvr-2024'>Thibaud Mautuit, Pierre Cunnac, Fr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span>d<span class="bibtex-protected"><span class="bibtex-protected">é</span></span>ric Truffer, Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos, Rebecca Dufrane, Gilbert Ma<span class="bibtex-protected">\^<span class="bibtex-protected">ı</span></span>tre, Martial Geiser, and Christophe Chiquet.
+URL: <a href="https://papers.ssrn.com/abstract=4960069">https://papers.ssrn.com/abstract=4960069</a>, <a href="https://doi.org/10.2139/ssrn.4960069">doi:10.2139/ssrn.4960069</a>.</summary>
+        <div class="highlight"><pre><span></span><span class="nc">@misc</span><span class="p">{</span><span class="nl">ssrn-2024</span><span class="p">,</span>
+<span class="w">    </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Amiot, Victor and Jimenez-del-Toro, Oscar and Guex-Croisier, Yan and Ott, Muriel and Bogaciu, Teodora-Elena and Banerjee, Shalini and Howell, Jeremy and Amstutz, Christoph and Chiquet, Christophe and Bergin, Ciara and Meloni, Ilenia and Tomasoni, Mattia and Hoogewoud, Florence and Anjos, André&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Automatic Transformer-Based Grading of Multiple Retinal Inflammatory Signs on Fluorescein Angiography&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">url</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;https://papers.ssrn.com/abstract=4960069&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">doi</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;10.2139/ssrn.4960069&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">abstract</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Background: Grading fluorescein angiography ({FA}) in the context of uveitis is complex, often leading to the oversight of retinal inflammation in clinical studies. This study aims to develop an automated method for grading retinal inflammation.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">number</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;4960069&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;2024&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">month</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;September&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">day</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;24&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">keywords</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;capillaropathy, Deep Learning, disease grading, fluorescein angiography, inter-grader agreement, macular edema, optic disc hyperfluorescence, ordinal classification index, papillitis, retinal inflammation, transformers, Uveitis, vascular leakage, vasculitis&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </details>
+    
+    <details id="pybtex-mvr-2024">
+        <summary>[3] Thibaud Mautuit, Pierre Cunnac, Fr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span>d<span class="bibtex-protected"><span class="bibtex-protected">é</span></span>ric Truffer, Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos, Rebecca Dufrane, Gilbert Ma<span class="bibtex-protected">\^<span class="bibtex-protected">ı</span></span>tre, Martial Geiser, and Christophe Chiquet.
 Absolute retinal blood flow in healthy eyes and in eyes with retinal vein occlusion.
-<em>Microvascular Research</em>, 1 2024.
-<a href="https://doi.org/10.1016/j.mvr.2023.104648">doi:10.1016/j.mvr.2023.104648</a>. <a class="cite-backref" href="#ref-mvr-2024-1" title="Jump back to reference 1">↩</a></p>
-<p id='eccv-2024'>Dilermando Queiroz&nbsp;Neto, Anderson Carlos, Ma<span class="bibtex-protected">\'<span class="bibtex-protected">ı</span></span>ra Fatoretto, Luis&nbsp;Filipe Nakayama, Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos, and Lilian Berton.
+<em>Microvascular Research</em>, January 2024.
+<a href="https://doi.org/10.1016/j.mvr.2023.104648">doi:10.1016/j.mvr.2023.104648</a>.</summary>
+        <div class="highlight"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">mvr-2024</span><span class="p">,</span>
+<span class="w">    </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Mautuit, Thibaud and Cunnac, Pierre and Truffer, Fr{\&#39;{e}}d{\&#39;{e}}ric and Anjos, Andr{\&#39;{e}} and Dufrane, Rebecca and Ma{\^{\i}}tre, Gilbert and Geiser, Martial and Chiquet, Christophe&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">month</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;January&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Absolute retinal blood flow in healthy eyes and in eyes with retinal vein occlusion&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">journal</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Microvascular Research&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">volume</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;152&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;2024&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">issn</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;0026-2862&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">doi</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;10.1016/j.mvr.2023.104648&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">abstract</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Purpose: To measure non-invasively retinal venous blood flow (RBF) in healthy subjects and patients with retinal venous occlusion (RVO). Methods: The prototype named AO-LDV (Adaptive Optics Laser Doppler Velocimeter), which combines a new absolute laser Doppler velocimeter with an adaptive optics fundus camera (rtx1, Imagine Eyes{\textregistered}, Orsay, France), was studied for the measurement of absolute RBF as a function of retinal vessel diameters and simultaneous measurement of red blood cell velocity. RBF was measured in healthy subjects (n = 15) and patients with retinal venous occlusion (RVO, n = 6). We also evaluated two softwares for the measurement of retinal vessel diameters: software 1 (automatic vessel detection, profile analysis) and software 2 (based on the use of deep neural networks for semantic segmentation of vessels, using a M2u-Net architecture). Results: Software 2 provided a higher rate of automatic retinal vessel measurement (99.5 \\% of 12,320 AO images) than software 1 (64.9 \\%) and wider measurements (75.5 ± 15.7 μm vs 70.9 ± 19.8 μm, p &lt; 0.001). For healthy subjects (n = 15), all the retinal veins in one eye were measured to obtain the total RBF. In healthy subjects, the total RBF was 37.8 ± 6.8 μl/min. There was a significant linear correlation between retinal vessel diameter and maximal velocity (slope = 0.1016; p &lt; 0.001; r2 = 0.8597) and a significant power curve correlation between retinal vessel diameter and blood flow (3.63 × 10−5 × D2.54; p &lt; 0.001; r2 = 0.7287). No significant relationship was found between total RBF and systolic and diastolic blood pressure, ocular perfusion pressure, heart rate, or hematocrit. For RVO patients (n = 6), a significant decrease in RBF was noted in occluded veins (3.51 ± 2.25 μl/min) compared with the contralateral healthy eye (11.07 ± 4.53 μl/min). For occluded vessels, the slope between diameter and velocity was 0.0195 (p &lt; 0.001; r2 = 0.6068) and the relation between diameter and flow was Q = 9.91 × 10−6 × D2.41 (p &lt; 0.01; r2 = 0.2526). Conclusion: This AO-LDV prototype offers new opportunity to study RBF in humans and to evaluate treatment in retinal vein diseases.&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </details>
+    
+    <details id="pybtex-nsr-2022">
+        <summary>[4] Adrian Galdran, André Anjos, José Dolz, Hadi Chakor, Hervé Lombaert, and Ismail&nbsp;Ben Ayed.
+State-of-the-art retinal vessel segmentation with minimalistic models.
+<em>Nature Scientific Reports</em>, 12(1):6174, April 2022.
+Number: 1 Publisher: Nature Publishing Group.
+URL: <a href="https://www.nature.com/articles/s41598-022-09675-y">https://www.nature.com/articles/s41598-022-09675-y</a>, <a href="https://doi.org/10.1038/s41598-022-09675-y">doi:10.1038/s41598-022-09675-y</a>.</summary>
+        <div class="highlight"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">nsr-2022</span><span class="p">,</span>
+<span class="w">    </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Galdran, Adrian and Anjos, André and Dolz, José and Chakor, Hadi and Lombaert, Hervé and Ayed, Ismail Ben&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;State-of-the-art retinal vessel segmentation with minimalistic models&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">volume</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;12&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">rights</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;2022 The Author(s)&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">issn</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;2045-2322&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">url</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;https://www.nature.com/articles/s41598-022-09675-y&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">pdf</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;https://www.nature.com/articles/s41598-022-09675-y.pdf&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">doi</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;10.1038/s41598-022-09675-y&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">abstract</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;The segmentation of retinal vasculature from eye fundus images is a fundamental task in retinal image analysis. Over recent years, increasingly complex approaches based on sophisticated Convolutional Neural Network architectures have been pushing performance on well-established benchmark datasets. In this paper, we take a step back and analyze the real need of such complexity. We first compile and review the performance of 20 different techniques on some popular databases, and we demonstrate that a minimalistic version of a standard U-Net with several orders of magnitude less parameters, carefully trained and rigorously evaluated, closely approximates the performance of current best techniques. We then show that a cascaded extension (W-Net) reaches outstanding performance on several popular datasets, still using orders of magnitude less learnable weights than any previously published work. Furthermore, we provide the most comprehensive cross-dataset performance analysis to date, involving up to 10 different databases. Our analysis demonstrates that the retinal vessel segmentation is far from solved when considering test images that differ substantially from the training data, and that this task represents an ideal scenario for the exploration of domain adaptation techniques. In this context, we experiment with a simple self-labeling strategy that enables moderate enhancement of cross-dataset performance, indicating that there is still much room for improvement in this area. Finally, we test our approach on Artery/Vein and vessel segmentation from {OCTA} imaging problems, where we again achieve results well-aligned with the state-of-the-art, at a fraction of the model complexity available in recent literature. Code to reproduce the results in this paper is released.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">addendum</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;(Issued from internship supervision)&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">pages</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;6174&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">number</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;1&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">journal</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Nature Scientific Reports&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">journaltitle</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Scientific Reports&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">shortjournal</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Sci Rep&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;2022&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">month</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;April&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">date</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;2022-04-13&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">langid</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;english&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">note</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Number: 1 Publisher: Nature Publishing Group&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">keywords</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Biomedical engineering, Computer science, Machine learning&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </details>
+    
+    <details id="pybtex-eccv-2024">
+        <summary>[5] Dilermando Queiroz&nbsp;Neto, Anderson Carlos, Ma<span class="bibtex-protected">\'<span class="bibtex-protected">ı</span></span>ra Fatoretto, Luis&nbsp;Filipe Nakayama, Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos, and Lilian Berton.
 Does data-efficient generalization exacerbate bias in foundation models?
-In <em>Proceedings of the 18th European Conference on Computer Vision (ECCV)</em>. October 2024. <a class="cite-backref" href="#ref-eccv-2024-1" title="Jump back to reference 1">↩</a></p>
+In <em>Proceedings of the 18th European Conference on Computer Vision (ECCV)</em>. October 2024.</summary>
+        <div class="highlight"><pre><span></span><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">eccv-2024</span><span class="p">,</span>
+<span class="w">    </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Queiroz Neto, Dilermando and Carlos, Anderson and Fatoretto, Ma{\&#39;{\i}}ra and Nakayama, Luis Filipe and Anjos, Andr{\&#39;{e}} and Berton, Lilian&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">projects</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;FAIRMI&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">month</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;October&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Does Data-Efficient Generalization Exacerbate Bias in Foundation Models?&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">booktitle</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Proceedings of the 18th European Conference on Computer Vision (ECCV)&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;2024&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">abstract</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Foundation models have emerged as robust models with label efficiency in diverse domains. In medical imaging, these models contribute to the advancement of medical diagnoses due to the difficulty in obtaining labeled data. However, it is unclear whether using a large amount of unlabeled data, biased by the presence of sensitive attributes during pre-training, influences the fairness of the model. This research examines the bias in the Foundation model (RetFound) when it is applied to fine-tune the Brazilian Multilabel Ophthalmological Dataset (BRSET), which has a different population than the pre-training dataset. The model evaluation, in comparison with supervised learning, shows that the Foundation Model has the potential to reduce the gap between the maximum AUC and minimum AUC evaluations across gender and age groups. However, in a data-efficient generalization, the model increases the bias when the data amount decreases. These findings suggest that when deploying a Foundation Model in real-life scenarios with limited data, the possibility of fairness issues should be considered.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">pdf</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;https://publications.idiap.ch/attachments/papers/2024/QueirozNeto\_ECCV\_2024.pdf&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </details>
+    
+</div>
 
   </div>
   <div class="tag-cloud">
