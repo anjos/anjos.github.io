@@ -158,15 +158,6 @@ main {
   article {
     margin: 0 8% 2% 8%;
 
-    img.cover {
-        float: left;
-        margin: 0.5em;
-        width: 7em;
-        height: 7em;
-        align: top;
-        object-fit: contain;
-    }
-
     header {
       h1, h2 {
         margin-bottom: 0;
@@ -509,14 +500,6 @@ ul.social {
     background-color: @soundcloud-bg-color;
   }
 
-  a.sc-orcid {
-    background-color: @orcid-bg-color;
-  }
-
-  a.sc-google-scholar {
-    background-color: @google-scholar-bg-color;
-  }
-
   a.sc-gitlab {
     background-color: @gitlab-bg-color;
   }
@@ -619,8 +602,7 @@ ul.social {
 
 // Admonition
 div.admonition {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
   border-radius: 4px;
   padding: 0.5em 1.25em 1.25em 1.25em;
 
@@ -800,10 +782,4 @@ div.figure.align-right {
   .github-corner .octo-arm{
     animation:octocat-wave 560ms ease-in-out;
   }
-}
-
-//handles the special case in which we have a "caption" after a series of
-//images in a "center" container
-p.figure.center {
-    margin: 0;
 }
