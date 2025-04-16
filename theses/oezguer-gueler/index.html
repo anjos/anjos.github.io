@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../../theme/stylesheet/style.min.css">
+
+    <link id="dark-theme-style" rel="stylesheet" type="text/css"
+          media="(prefers-color-scheme: dark)"
+    href="../../theme/stylesheet/dark-theme.min.css">
+
+    <link id="pygments-dark-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: dark)"
+          href="../../theme/pygments/solarized-dark.min.css">
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+              media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+          href="../../theme/pygments/solarized-light.min.css">
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" type="text/css" href="../../css/custom.css">
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/images/profile_128.png">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#333">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#333">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Microsoft EDGE -->
+  <meta name="msapplication-TileColor" content="#333">
+
+
+
+
+
+
+
+
+
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#333">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#333">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#333">
+
+
+<meta name="author" content="André Anjos" />
+<meta name="description" content="This thesis investigates CNN-based detection of active Tuberculosis (aTB) from chest X-rays using the TBX11K dataset, which includes ground-truth bounding boxes. It shows that adding more annotated data improves model performance and proposes a novel evaluation metric—ROAD-Normalised PropEng Average—to compare visual explanation methods, identifying DenseNet-121 with Eigen-CAM as the most faithful and accurate combination." />
+<meta name="keywords" content="">
+
+
+  <meta property="og:site_name" content="André Anjos"/>
+  <meta property="og:title" content="Özgür Güler: Explaining CNN-Based Active Tuberculosis Detection in Chest X-Rays through Saliency Mapping Techniques"/>
+  <meta property="og:description" content="This thesis investigates CNN-based detection of active Tuberculosis (aTB) from chest X-rays using the TBX11K dataset, which includes ground-truth bounding boxes. It shows that adding more annotated data improves model performance and proposes a novel evaluation metric—ROAD-Normalised PropEng Average—to compare visual explanation methods, identifying DenseNet-121 with Eigen-CAM as the most faithful and accurate combination."/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:url" content="../../theses/oezguer-gueler/"/>
+  <meta property="og:type" content="article"/>
+  <meta property="article:published_time" content="2023-09-01 00:00:00+02:00"/>
+  <meta property="article:modified_time" content=""/>
+  <meta property="article:author" content="../../author/andre-anjos.html">
+  <meta property="article:section" content="theses"/>
+  <meta property="og:image" content="../../images/covers/oezguer-gueler.png">
+
+  <title>André Anjos &ndash; Özgür Güler: Explaining CNN-Based Active Tuberculosis Detection in Chest X-Rays through Saliency Mapping Techniques</title>
+
+
+</head>
+<body >
+
+<aside>
+  <div>
+    <a href="../../">
+      <img src="/images/profile_128.png" alt="André Anjos" title="André Anjos">
+    </a>
+
+    <h1>
+      <a href="../../">André Anjos</a>
+    </h1>
+
+    <p>Machine Learning, Computer Vision, Medical Artificial Intelligence, Reproducibility, Ph.D.</p>
+
+
+    <nav>
+      <ul class="list">
+
+
+
+          <li>
+            <a target="_self" href="https://anjos.ai/cv/cv.pdf" >CV</a>
+          </li>
+          <li>
+            <a target="_self" href="/research/" >Research</a>
+          </li>
+          <li>
+            <a target="_self" href="/publications/" >Publications</a>
+          </li>
+          <li>
+            <a target="_self" href="/theses/" >Supervised Students</a>
+          </li>
+          <li>
+            <a target="_self" href="/courses/" >Courses</a>
+          </li>
+          <li>
+            <a target="_self" href="/software/" >Software</a>
+          </li>
+          <li>
+            <a target="_self" href="/media/" >Talks & Media</a>
+          </li>
+          <li>
+            <a target="_self" href="/about/" >About</a>
+          </li>
+          <li>
+            <a target="_self" href="/short-bio/" >Short Bio</a>
+          </li>
+          <li>
+            <a target="_self" href="/contact/" >Contact</a>
+          </li>
+      </ul>
+    </nav>
+
+    <ul class="social">
+      <li>
+        <a class="sc-orcid"
+           href="https://orcid.org/0000-0001-7248-4014"
+           target="_blank">
+<i class="fa-brands fa-orcid"></i>        </a>
+      </li>
+      <li>
+        <a class="sc-google-scholar"
+           href="https://scholar.google.ch/citations?user=pAfLhMoAAAAJ"
+           target="_blank">
+<i class="ai ai-google-scholar-square"></i>        </a>
+      </li>
+      <li>
+        <a class="sc-linkedin"
+           href="https://www.linkedin.com/in/andreranjos/"
+           target="_blank">
+<i class="fa-brands fa-linkedin"></i>        </a>
+      </li>
+      <li>
+        <a class="sc-stack-overflow"
+           href="https://stackoverflow.com/users/712525/andré-anjos"
+           target="_blank">
+<i class="fa-brands fa-stack-overflow"></i>        </a>
+      </li>
+      <li>
+        <a class="sc-github"
+           href="https://github.com/anjos"
+           target="_blank">
+<i class="fa-brands fa-github"></i>        </a>
+      </li>
+      <li>
+        <a class="sc-gitlab"
+           href="https://gitlab.idiap.ch/medai/software"
+           target="_blank">
+<i class="fa-brands fa-gitlab"></i>        </a>
+      </li>
+    </ul>
+  </div>
+
+</aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="oezguer-gueler">Özgür Güler: Explaining CNN-Based Active Tuberculosis Detection in Chest X-Rays through Saliency Mapping Techniques</h1>
+    <p>
+      Posted on Fri 01 September 2023 in <a href="../../theses/">theses</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <div class="figure align-center" style="width: 100%">
+<img alt="SALIENCY MAPS" src="../../images/covers/oezguer-gueler.png" style="width: 90%;" />
+<p class="caption">In this figure, we show (top row) Saliency maps for the unbalanced model M_U
+featuring the five cases from the TBX11k test set with the lowest Proportional Energy
+scores; (bottom row) respective predictions of our best balanced model M_B_B.
+Human-annotated ground-truth regions including radiological signs are indicated by
+bright magenta bounding boxes. The heatmaps (ranging from red to blue) indicate the
+contribution of different regions to the models' decision-making, with non-colored
+areas having no significant contribution.</p>
+</div>
+<p>Tuberculosis (TB) is an infectious disease caused by the bacterium Mycobacterium
+tuberculosis, which is one of the leading causes of death worldwide. Various Deep
+Convolutional Neural Network models have gained popularity to help during the TB
+screening process by detecting patients with active Tuberculosis from their Chest
+X-Rays. To help with further advancing the research, a new publicly available dataset,
+TBX11K, has been used to increase the number of sam- ples during training for existing
+replaceable state-of-the-art models. In the first step, the model's performance was
+evaluated to see if an improvement through the addition of more TB-related data was
+observable. It was shown that state-of-the-art replicable binary classifier models could
+further be improved through the inclusion of more data. Further, there is a lack of
+focus on generating and evaluating explanations for such models. The preferred methods
+currently are saliency mapping techniques such as Grad-CAM, to generate visual
+explanations based on the model's decision-making process, by overlaying heatmaps over
+the Chest X-Rays. The selected TBX11K dataset includes ground truth bounding box labels,
+which makes it possible to evaluate if the visualisations were correct. There are
+various evaluation metrics to evaluate the faithful- ness and localisation performance
+of the saliency mapping techniques according to ground truth labels. Two of them have
+been identified to be useful, namely RemOve and Debias, and Pro- portional Energy.
+RemOve and Debias was used to observe if there is one universal saliency mapping
+technique that performs well for all models for the task of active Tuberculosis
+detection. Further, based on these two metrics, a new metric was proposed,
+ROAD-Normalised PropEng Average, to measure the overall best-performing model and
+Saliency Mapping Technique com- bination. From the evaluation with RemOve and Debias, it
+was concluded that there does not seem to be a universal saliency mapping technique that
+performs well on all model architectures for the detection of active Tuberculosis. Thus,
+it is recommended to always consider the under- lying model before choosing the optimal
+saliency mapping technique. Further, through the use of the ROAD-Normalised PropEng
+Average, it was concluded that one model in combination with a saliency mapping
+technique offered the best trade-off between faithfulness and correct- ness of the
+visualisations. This was the multi-label DenseNet-121 model with Eigen-CAM. To obtain
+accurate classifications of active Tuberculosis with explainable and correct
+visualisations, it is recommended to use this model and visualisation technique
+combination.</p>
+<div class="admonition note">
+<p class="first admonition-title">Reproducibility Checklist</p>
+<p><span class="fa fa-file-pdf"></span> <a class="reference external" href="https://capuana.ifi.uzh.ch/publications/PDFs/24103_Master_Thesis_oezguer_acar_gueler.pdf">Thesis report</a></p>
+<p><span class="fa fa-brands fa-python"></span> <a class="reference external" href="https://gitlab.idiap.ch/medai/software/paper/euvip24-refine-cad-tb">Software</a> is based on the open-source <a class="reference external" href="https://gitlab.idiap.ch/medai/software/mednet">mednet</a>
+library. <em>N.B.: Software leading to these results was integrated into the Medical AI
+Group software stack.</em></p>
+<p><span class="fa fa-database"></span> All databases are publicly available</p>
+<p class="last"><span class="fa fa-book"></span> An article with results from this thesis was published on a conference
+<a title="click to jump to reference [1]"href="#pybtex-euvip-2024">[1]</a></p>
+</div>
+<!-- Place your references here -->
+<!--
+SPDX-FileCopyrightText: Copyright © 2024 André Anjos <andre.dos.anjos@gmail.com>
+SPDX-License-Identifier: MIT
+-->
+<h2>Bibliography</h2>
+
+
+
+
+
+<div id="pybtex">
+    
+    <details id="pybtex-euvip-2024">
+        <summary>[1] <span class="bibtex-protected"><span class="bibtex-protected">Ö</span></span>zg<span class="bibtex-protected"><span class="bibtex-protected">ü</span></span>r G<span class="bibtex-protected"><span class="bibtex-protected">ü</span></span>ler, Manuel G<span class="bibtex-protected"><span class="bibtex-protected">ü</span></span>nther, and Andr<span class="bibtex-protected"><span class="bibtex-protected">é</span></span> Anjos.
+Refining tuberculosis detection in cxr imaging: addressing bias in deep neural networks via interpretability.
+In <em>Proceedings of the 12th European Workshop on Visual Information Processing</em>. September 2024.</summary>
+        <div class="highlight"><pre><span></span><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">euvip-2024</span><span class="p">,</span>
+<span class="w">    </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{G{\&quot;{u}}ler, {\&quot;{O}}zg{\&quot;{u}}r and G{\&quot;{u}}nther, Manuel and Anjos, Andr{\&#39;{e}}}</span><span class="p">,</span>
+<span class="w">    </span><span class="na">month</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;September&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Refining Tuberculosis Detection in CXR Imaging: Addressing Bias in Deep Neural Networks via Interpretability&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">booktitle</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Proceedings of the 12th European Workshop on Visual Information Processing&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;2024&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">abstract</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;Automatic classification of active tuberculosis from chest X-ray images has the potential to save lives, especially in low- and mid-income countries where skilled human experts can be scarce. Given the lack of available labeled data to train such systems and the unbalanced nature of publicly available datasets, we argue that the reliability of deep learning models is limited, even if they can be shown to obtain perfect classification accuracy on the test data. One way of evaluating the reliability of such systems is to ensure that models use the same regions of input images for predictions as medical experts would. In this paper, we show that pre-training a deep neural network on a large-scale proxy task, as well as using mixed objective optimization network (MOON), a technique to balance different classes during pre-training and fine-tuning, can improve the alignment of decision foundations between models and experts, as compared to a model directly trained on the target dataset. At the same time, these approaches keep perfect classification accuracy according to the area under the receiver operating characteristic curve (AUROC) on the test set, and improve generalization on an independent, unseen dataset. For the purpose of reproducibility, our source code is made available online.&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="na">pdf</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&quot;https://publications.idiap.ch/attachments/papers/2024/Guler\\_EUVIP24\\_2024.pdf&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </details>
+    
+</div>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+
+
+
+</article>
+
+<footer>
+<p>&copy; André Anjos 2025</p>
+</footer>  </main>
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " André Anjos ",
+  "url" : "../..",
+  "image": "/images/profile_128.png",
+  "description": "Professional Website"
+}
+</script>
+</body>
+</html>
